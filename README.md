@@ -4,8 +4,8 @@
 
 ```
 cis2910ctransformers
+├─── index.html
 ├─── pages
-│     ├── index.html
 │     ├── history.html
 │     ├── machine-learning.html
 │     └── big-data.html
