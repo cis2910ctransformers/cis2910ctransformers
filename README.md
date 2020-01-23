@@ -13,6 +13,7 @@ Project for CIS2910C (IT Capstone)
 ```MARKDOWN
 cis2910ctransformers
 ├─── index.html
+├─── images
 ├─── pages
 │     ├── history.html
 │     ├── machine-learning.html
