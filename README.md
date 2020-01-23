@@ -20,7 +20,6 @@ cis2910ctransformers
 │     └── big-data.html
 ├─── styles
 │     └── styles.css
-├─── images
 └── README.md
 
 ```
