@@ -14,12 +14,17 @@ Project for CIS2910C (IT Capstone)
 cis2910ctransformers
 ├─── index.html
 ├─── images
+│     └── ai.png
 ├─── pages
 │     ├── history.html
 │     ├── machine-learning.html
 │     └── big-data.html
 ├─── styles
 │     └── styles.css
+├─── js
+│     └── particles.js
+├─── assets
+│     └── particles.json
 └── README.md
 
 ```
