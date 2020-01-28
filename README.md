@@ -1,8 +1,20 @@
 # cis2910ctransformers
+[![HitCount](http://hits.dwyl.io/cis2910ctransformers/cis2910ctransformers.svg)](http://hits.dwyl.io/cis2910ctransformers/cis2910ctransformers)
+[![Forks](https://img.shields.io/github/forks/cis2910ctransformers/cis2910ctransformers?style=flat-square)](#)
+[![Stars](https://img.shields.io/github/stars/cis2910ctransformers/cis2910ctransformers?style=flat-square)](#)
+[![Issues](https://img.shields.io/github/issues/cis2910ctransformers/cis2910ctransformers?style=flat-square)](#)
+[![License](https://img.shields.io/github/license/cis2910ctransformers/cis2910ctransformers?style=flat-square)](#)
 
 ## About
 
 Project for CIS2910C (IT Capstone)
+
+## Dependencies
+
+- Bootstrap
+- Particles.JS
+- JQuery
+- FontAwesome
 
 ## Installation
 
