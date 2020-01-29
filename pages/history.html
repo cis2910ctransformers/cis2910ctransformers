@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Museum | Home</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #FF9F55;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.containerTime {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.containerTime::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: -5px;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50.3%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #d0d1d5;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #d0d1d5 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+}
+
+.content:Hover{
+  border-style: solid;
+  border-color: #FF9F55;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .containerTime {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .containerTime::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #dfe0e4 transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 3px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .left {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the right ones */
+  .right {
+  left: 3.3%;
+  }
+}
+
+.scrollup, .scrollup:hover, .scrollup:focus{
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/icon_top.png);
+  display: block;
+  color: transparent;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  opacity: .5;
+
+}
+</style>
+  </head>
+<div id="topScroll"></div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="./../images/ai.png" height="50" width="50" alt="AI logo">
+    <a class="navbar-brand" href="./../index.html">AI Museum</a>
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="./../index.html"rel="noopener noreferrer">Home <i class="fas fa-home"></i></a>
+            <a class="nav-item nav-link" href="history.html"rel="noopener noreferrer">History <i class="fas fa-landmark"></i></a>
+            <a class="nav-item nav-link" href="machine-learning.htm" lrel="noopener noreferrer">Machine Learning <i class="fas fa-robot"></i></a>
+            <a class="nav-item nav-link active" href="big-data.html" rel="noopener noreferrer">BigData <i class="fas fa-database"></i><span class="sr-only">(current)</span></a>
+
+        </div>
+    </div>
+</nav>
+<body>
+  <header></header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-12 col-md-12">
+          <h1 class="text-center">A Short History Of Artificial Intelligence</h1>
+        </div>
+      </div>
+    </div>
+    
+  <section>
+    <div class="timeline">
+  <div class="containerTime left">
+    <div class="content">
+      <h2>1308</h2>
+      <div class="card">
+        <img class="card-img-top" src="../images/1308.png" alt="...">
+        <div class="card-body">
+          <p class="card-text">Catalan poet and theologian Ramon Llull publishes Ars generalis ultima (The Ultimate General Art), further perfecting his method of using paper-based mechanical means to create new knowledge from combinations of concepts.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="containerTime right">
+    <div class="content">
+      <h2>1666</h2>
+      <div class="card">
+        <img class="card-img-top" src="../images/1666.png" alt="...">
+        <div class="card-body">
+          <p class="card-text">Mathematician and philosopher Gottfried Leibniz publishes Dissertatio de arte combinatoria (On the Combinatorial Art), following Ramon Llull in proposing an alphabet of human thought and arguing that all ideas are nothing but combinations of a relatively small number of simple concepts.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="containerTime left">
+    <div class="content">
+      <h2>1726</h2>
+      <div class="card">
+        <img class="card-img-top" src="../images/1726.png" alt="...">
+        <div class="card-body">
+          <p class="card-text">Jonathan Swift publishes Gulliver's Travels, which includes a description of the Engine, a machine on the island of Laputa (and a parody of Llull's ideas): "a Project for improving speculative Knowledge by practical and mechanical Operations." By using this "Contrivance," "the most ignorant Person at a reasonable Charge, and with a little bodily Labour, may write Books in Philosophy, Poetry, Politicks, Law, Mathematics, and Theology, with the least Assistance from Genius or study."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="containerTime right">
+    <div class="content">
+      <h2>1736</h2>
+      <div class="card">
+        <img class="card-img-top" src="../images/1736.png" alt="...">
+        <div class="card-body">
+          <p class="card-text">Thomas Bayes develops a framework for reasoning about the probability of events. Bayesian inference will become a leading approach in machine learning.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="containerTime left">
+    <div class="content">
+      <h2>2011</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div class="containerTime right">
+    <div class="content">
+      <h2>2007</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+</div>  
+  </section>
+  </main>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+<footer>
+      <div class="container-fluid">
+        <a
+          href="https://github.com/cis2910ctransformers/cis2910ctransformers/graphs/contributors"
+          >Contributors on Github <i class="fab fa-github"></i
+        ></a>
+        <div id ="copyright">
+          &copy;<small>Transformers 2020</small>
+      </div>
+      </div>
+    </footer>
+  <div class="menu">
+      <a href="#topScroll" class="scrollup">Up</a>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="../js/smoothscrolling.jquery.js"></script>
+  <script>
+      $(document).ready(function(){
+        $(".menu a").smoothscrolling();
+
+        $(window).scroll(function(){
+          if ($(this).scrollTop()>100){
+            $('.scrollup').fadeIn();
+          } else {
+            $('.scrollup').fadeOut();
+          }
+        });
+
+      });
+    </script>
+</body>
+</html>
