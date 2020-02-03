@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
     <title>Big Data</title>
-    <meta name ="Author" content="Oleksiy Kyrylenko">
+    <meta charset="UTF-8">
+    <meta name ="Author of this page" content="Oleksiy Kyrylenko">
     <meta name ="Project" content="CIS2910C Valencia Sprint 2020 Transformers">
+    <meta name ="Last modified" content="01/30/19">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="60">
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <script src="../js/particles.js"></script>
     <link
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -15,6 +20,11 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
     <script><!--script goes here --> </script>
 </head>
+<script>
+    particlesJS.load('particles-js', '../assets/particles.json', function () {
+        console.log('callback - particles.js config loaded');
+    });
+</script>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <img src="./../images/ai.png" height="50" width="50" alt="AI logo">
@@ -57,20 +67,19 @@
     <h3 align="center"><a href="#bddef" style="color: black;text-underline: none">Big Data</a> history</h3>
             </header>
         </section>
+    <h2 align="center"><a href="#bddef" style="color: black;text-underline: none">Big Data</a> history</h2>
     <p>This is the history found at<sup>1</sup></p>
     <div>
         The slide show will go here
     </div>
-    <h2><a href="#bddef" style="color: black;text-underline: none">Big Data</a> history</h2>
-    <figure>
-        <figcaption>The slide show will go here</figcaption>
-    </figure>
 </section>
 <div>
 <section id="applicationofbd">
     <header>
     <h3 align="center">Application of <a href="#bddef" style="color: black;text-underline: none">Big Data</a></h3>
         </header>
+<section>
+    <h2 align="center">Application of <a href="#bddef" style="color: black;text-underline: none">Big Data</a></h2>
     <p>This is a list of areas where <a href="#bddef" style="color: black;text-underline: none">Big Data</a> is the most used:</p>
     <ul>
         <li>Reasoning</li>
@@ -88,6 +97,13 @@
     <h3>Languages used in <a href="#bddef" style="color: black;text-underline: none">Big Data</a>:</h3>
     </header>
         <ul>
+<section>
+    <h2>How Big Data Works?</h2>
+    <embed src ="https/www.youtube.com" type="" >
+</section>
+<section>
+    <h2 align="center">Languages used in <a href="#bddef" style="color: black;text-underline: none">Big Data</a>:</h2>
+    <ul>
         <li>
             <figure>
                 <figcaption>
@@ -135,6 +151,9 @@
     <h3 align="center">Examples of <a href="#bddef" style="color: black;text-underline: none">Big Data</a> Usage</h3>
     </header>
         <p>For example you have <dfn><abbr title = "National Hockey League">NHL</abbr></dfn> Statistics. In this example we will take statistics for Tampa Bay Lightnings(<b><abbr title = "Tampa Bay Lightning">TBA</abbr></b>) and Boston Bruins(<b><abbr title = "Boston Bruins">BOS</abbr></b>) from 2018-2019 season split monthly</p>
+<>
+    <h2 align="center">Examples of <a href="#bddef" style="color: black;text-underline: none">Big Data</a> Usage</h2>
+    <p>For example you have <dfn><abbr title = "National Hockey League">NHL</abbr></dfn> Statistics. In this example we will take statistics for Tampa Bay Lightnings(<b><abbr title = "Tampa Bay Lightning">TBA</abbr></b>) and Boston Bruins(<b><abbr title = "Boston Bruins">BOS</abbr></b>) from 2018-2019 season split monthly</p>
     <div>
         <p><b>Tampa Bay Lightning</b> and <b>Boston Bruins</b> results season 2018-2019</p>
         <table>
@@ -216,11 +235,12 @@
             </tfoot>
         </table>
     </div>
-    <p>Choose a team</p>
-    <select></select>
-    <p>Choose a month</p>
-    <select></select>
-    <button type="button">Tell me my chances</button>
+    <label for="chooseTeam">Choose a team</label>
+    <select id="chooseTeam"></select>
+    <label for="chooseMonthDD">Choose a month</label>
+    <select id = "chooseMonthDD"></select>
+    <br/>
+    <button type="button">Tell Me My Chances</button>
     <p>The chances your team is going to win this month is <b>result goes here</b> </p>
     <p>To calculate a simple probability, we need to follow these steps:</p>
     <ol>
@@ -239,6 +259,7 @@
     <header>
     <h3>Future of <a href="#bddef" style="color: black;text-underline: none">Big Data</a></h3>
         </header>
+    <h2>The Future of <a href="#bddef" style="color: black;text-underline: none">Big Data</a></h2>
     <ul>
         <li><b>Machine Learning will be the next big thing.</b> It will help businesses with preparing data and conduction analysis.<a href="https://www.mathsisfun.com/mean.html" rel="noreferrer" target ="_blank">&#8599;</a><sup>4</sup></li>
         <li><b>Privacy will be a challenge.</b> The stakes of security will be higher due the increasing volumes of data. If there is not an efficient way to deal with this, the trend will fade very quickly.<a href="https://www.mathsisfun.com/mean.html" rel="noreferrer" target ="_blank">&#8599;</a><sup>4</sup></li>
@@ -251,7 +272,7 @@
     <aside>Jeff Houpt - President at DocInfusion, says that the landscape of big data that is the usage will become easier and simpler. He is sharing that
         the big data is evolving from highly technical and expensive to more self-service. So we would be charged for what we use.</aside>
 </section>
-<footer>
+<section>
     <div>
         <ol>
             <li><cite>https://en.wikipedia.org/wiki/Big_data</cite></li>
@@ -263,15 +284,15 @@
             <li><cite>https://www.smartdatacollective.com/how-big-data-is-transforming-augmented-reality/</cite></li>
         </ol>
     </div>
-    <div id ="copyright">
-        <details style="font-size: small"><summary>&copy;Transformers 2020</summary>
-            <fieldset>Team members</fieldset>
-            <ul>
-                <li>Oleksiy Kyrylenko</li>
-            </ul>
-        </details>
-
-    </div>
-</footer>
+</section>
+    <footer>
+        <div class="container-fluid">
+            <a href="https://github.com/cis2910ctransformers/cis2910ctransformers/graphs/contributors">Contributors on Github
+                <i class="fab fa-github"></i></a>
+            <div id="copyright">
+                &copy;<small>Transformers 2020</small>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,99 +1,97 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Museum | Home</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  </head>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/index.html">AI Museum</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#"
-          >Home <i class="fas fa-home"></i
-          ><span class="sr-only">(current)</span></a
-        >
-        <a class="nav-item nav-link" href="/history.html"
-          >History <i class="fas fa-landmark"></i
-        ></a>
-        <a class="nav-item nav-link" href="/machine-learning.html"
-          >Machine Learning <i class="fas fa-robot"></i
-        ></a>
-        <a class="nav-item nav-link" href="/big-data.html"
-          >Big Data <i class="fas fa-database"></i
-        ></a>
-      </div>
-    </div>
-  </nav>
-  <body>
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome to the AI Museum!</h1>
-      <p class="lead">
-        Artificial Intelligence, otherwise known as AI is the creation of
-        intelligent that learn from their mistakes and work like humans. AI is
-        used everywhere nowadays and there is no looking back!
-      </p>
-      <hr class="my-4" />
-      <p>
-        Want to get involved? Contact us by clicking the button below!
-      </p>
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#contact" role="button"
-          >Learn more</a
-        >
-      </p>
-    </div>
 
-    <div class="container">
-      <h1 class="display-6">
-        Our Mission <i class="fas fa-chalkboard-teacher"></i>
-      </h1>
+<head>
+  <meta charset="UTF-8" />
+  <title>Museum | Home</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/particles.js"></script>
+</head>
+<script>
+  particlesJS.load('particles-js', 'assets/particles.json', function () {
+    console.log('callback - particles.js config loaded');
+  });
+</script>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <img src="images/ai.png" height="50" width="50" alt="AI logo">
+  <a class="navbar-brand" href="/index.html">AI Museum</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <i class="fas fa-home"></i><span
+          class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="pages/history.html">History <i class="fas fa-landmark"></i></a>
+      <a class="nav-item nav-link" href="pages/machine-learning.html">Machine Learning <i class="fas fa-robot"></i></a>
+      <a class="nav-item nav-link" href="pages/big-data.html">Big Data <i class="fas fa-database"></i></a>
+    </div>
+  </div>
+</nav>
+
+<body>
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to the AI Museum!</h1>
+    <p class="lead">
+      Artificial Intelligence, otherwise known as AI is the creation of
+      intelligent that learn from their mistakes and work like humans. AI is
+      used everywhere nowadays and there is no looking back!
+    </p>
+    <hr class="my-4" />
+    <p>
+      Want to get involved? Contact us by clicking the button below!
+    </p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg learn-more" href="#contact" role="button">Learn more</a>
+    </p>
+  </div>
+  <div id="particles-js"></div>
+  <div class="container">
+    <h1 class="display-6">
+      Our Mission <i class="fas fa-chalkboard-teacher"></i>
+    </h1>
+    <p>
+      The Artificial Intelligence Museum serves to teach the all ages, young
+      and old about the facinating topic that is Artificial Intelligence (AI).
+      We want to people to know more about what they are using everyday and
+      how they can use AI to better themselves in the real world.
+    </p>
+  </div>
+
+  <div class="container">
+    <h1 class="display-6">
+      What We Offer <i class="fas fa-book"></i>
+    </h1>
+    <p>
+      Knowledge on all things Artificial Intelligence. We want to influence the creation of AI as well as educate those
+      unaware of how important and highly used AI is in our everyday lives.
+    </p>
+  </div>
+
+  <div class="container">
+    <div id="contact">
+      <h1 class="display-7">Contact Us <i class="fas fa-paper-plane"></i></h1>
       <p>
-        The Artificial Intelligence Museum serves to teach the all ages, young
-        and old about the facinating topic that is Artificial Intelligence (AI).
-        We want to people to know more about what they are using everyday and
-        how they can use AI to better themselves in the real world.
+        Have questions? Want to get involved? Contact us and we will be sure
+        to get back to you!
       </p>
     </div>
-
-    <div class="container">
-      <div id="contact">
-        <h1 class="display-7">Contact Us <i class="fas fa-paper-plane"></i></h1>
-        <p>
-          Have questions? Want to get involved? Contact us and we will be sure
-          to get back to you!
-        </p>
+  </div>
+  <footer>
+    <div class="container-fluid">
+      <a href="https://github.com/cis2910ctransformers/cis2910ctransformers/graphs/contributors">Contributors on Github
+        <i class="fab fa-github"></i></a>
+      <div id="copyright">
+        &copy;<small>Transformers 2020</small>
       </div>
     </div>
-    <footer>
-      <div class="container-fluid">
-        <a
-          href="https://github.com/cis2910ctransformers/cis2910ctransformers/graphs/contributors"
-          >Contributors on Github <i class="fab fa-github"></i
-        ></a>
-      </div>
-    </footer>
-  </body>
+  </footer>
+</body>
+
 </html>
