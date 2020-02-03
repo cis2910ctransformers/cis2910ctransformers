@@ -48,3 +48,11 @@ nav>img{
     opacity: 1;
   }
 }
+
+#languagesusedinbd{
+    float: right;
+}
+
+#applicationofbd{
+float: left;
+}
