@@ -74,4 +74,29 @@ nav>img{
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
   }
-  } 
+}
+
+#languagesusedinbd{
+    float: right;
+}
+
+#applicationofbd{
+float: left;
+}
+
+button.calculatechances:hover, button.calculatechances:focus, select:hover, select:focus{
+  box-shadow: 0 0 5px rgba(0,0,0, .75);
+}
+
+button.calculatechances, select{
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+section>header{
+  color: dimgray;
+  font-weight: bolder;
+  text-shadow: 0px 4px 3px dodgerblue;
+}
+
+
