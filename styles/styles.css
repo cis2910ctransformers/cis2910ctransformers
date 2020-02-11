@@ -2,6 +2,7 @@ body,
 html {
   scroll-behavior: smooth;
   animation: fadeIn 1s ease-in-out;
+  background-color: blanchedalmond;
 }
 
 .nav-link:hover {
