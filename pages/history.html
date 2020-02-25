@@ -6,10 +6,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
-     <link rel="stylesheet" href="../styles/style-history.css" />
   <link rel="stylesheet" href="../styles/styles.css" />
- 
-</head>
+  <link rel="stylesheet" href="../styles/style-history.css" />
+ </head>
 <body>
 <div id="topscroll"></div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -174,6 +173,11 @@
   
   <script src="../js/particles.js"></script>
   <script src="../js/history.js"></script>
+ <script>
+   particlesJS.load('particles-bg', '../assets/particles.json', function () {
+      console.log('callback - particles.js config loaded');
+    });
+</script>
 <a id="scrollTop" title="Back to top" href="#"></a>
 </body>
 </html>
