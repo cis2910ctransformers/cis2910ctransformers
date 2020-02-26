@@ -35,7 +35,6 @@ table{
   margin-right: auto;
 }
 thead,tbody, tfoot, tr, td, th{
-  border:1px solid darkgrey;
   border-collapse: collapse;
   padding:5px;
   margin:5px;
@@ -98,6 +97,14 @@ section>header{
   color: dimgray;
   font-weight: bolder;
   text-shadow: 0px 4px 3px dodgerblue;
+}
+
+p{
+  font-size: 1.1em;
+  border-style: dashed;
+  border-color:black;
+  border-width: thick;
+  width:50%;
 }
 
 
