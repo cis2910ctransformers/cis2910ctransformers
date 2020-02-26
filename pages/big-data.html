@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Big Data</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name ="Author of this page" content="Oleksiy Kyrylenko">
+    <meta name ="Project" content="CIS2910C Valencia Sprint 2020 Transformers">
+    <meta name ="Last modified" content="01/30/19">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="60">
+    <!--
+<link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"/>
+        -->
+
+
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+
+    <script src="../js/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', '../assets/particles.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+    <style>
+        header>img{
+            width: 100%;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="./../images/ai.png" height="50" width="50" alt="AI logo">
+    <a class="navbar-brand" href="./../index.html">AI Museum</a>
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="./../index.html" rel="noopener noreferrer">Home <i class="fas fa-home"></i></a>
+            <a class="nav-item nav-link" href="history.html" rel="noopener noreferrer">History <i class="fas fa-landmark"></i></a>
+            <a class="nav-item nav-link" href="machine-learning.htm" rel="noopener noreferrer">Machine Learning <i class="fas fa-robot"></i></a>
+            <a class="nav-item nav-link active" href="#" rel="noopener noreferrer">BigData <i class="fas fa-database"></i><span class="sr-only">(current)</span></a>
+
+        </div>
+    </div>
+</nav>
+<header>
+    <img src="../images/BigData.png" alt="Big Data">
+    <h1>Big Data</h1>
+</header>
+<section>
+    <p>So what is Big Data?<br>
+        <dfn id="bddef"><strong><em>Big Data</em></strong></dfn> is a field that treats ways to analyze, systematically extract information from, or otherwise deal with data sets that are too large or complex
+        to be dealt with by traditional data-processing application software. Data with many cases (rows) offer greater statistical power, while data with higher complexity (more attributes or columns)
+        may lead to a higher false discovery rat<a href="https://en.wikipedia.org/wiki/Big_data" rel="noreferrer" target ="_blank">&#8599;</a><sup>1</sup></p>
+</section>
+<section>
+    <h2><a href="#bddef" style="color: black">Big Data</a> history</h2>
+    <p>This is the history found at<sup>1</sup></p>
+    <div>
+        The slide show will go here
+    </div>
+</section>
+<section>
+    <h2>Application of <a href="#bddef" style="color: black">Big Data</a></h2>
+    <p>This is a list of areas where <a href="#bddef" style="color: black">Big Data</a> is the most used:</p>
+    <ul>
+        <li>Reasoning</li>
+        <li>Automated learning and scheduling</li>
+        <li>Machine learning</li>
+        <li>Natural language processing</li>
+        <li>Computer vision</li>
+        <li>Robotics</li>
+        <li>General intelligence</li>
+    </ul>
+</section>
+<section>
+    <h2>How Big Data Works?</h2>
+    <embed src ="https/www.youtube.com">
+</section>
+<section>
+    <h2>Languages used in <a href="#bddef" style="color: black">Big Data</a>:</h2>
+    <ul>
+        <li>
+            <figure>
+                <figcaption>
+                    Python
+                </figcaption>
+                <img src = "../images/python_logo.jpg" height="50" width="70" alt="python">
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <figcaption>
+                    Java
+                </figcaption>
+                <img src = "../images/java_logo.jpeg" height="50" width="70" alt="java">
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <figcaption>
+                    R
+                </figcaption>
+                <img src = "../images/r_logo.jpeg" height="50" width="70" alt="r">
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <figcaption>
+                    SQL
+                </figcaption>
+                <img src = "../images/sql_logo.jpeg" height="50" width="70" alt="sql">
+            </figure>
+        </li>
+    </ul>
+</section>
+<section>
+    <h2>Examples of <a href="#bddef" style="color: black">Big Data</a> Usage</h2>
+    <p>For example you have <dfn><abbr title = "National Hockey League">NHL</abbr></dfn> Statistics. In this example we will take statistics for Tampa Bay Lightnings(<b><abbr title = "Tampa Bay Lightning">TBA</abbr></b>) and Boston Bruins(<b><abbr title = "Boston Bruins">BOS</abbr></b>) from 2018-2019 season split monthly</p>
+    <div>
+        <p><b>Tampa Bay Lightning</b> and <b>Boston Bruins</b> results season 2018-2019</p>
+        <table id="teamsrecords">
+            <colgroup>
+                <col>
+                <col span="2" style="background-color: lightskyblue">
+                <col span="2" style="background-color: yellow">
+            </colgroup>
+            <thead>
+            <tr>
+                <th rowspan="2">Team&rarr;<br/>Month<br/>&darr;</th>
+                <th colspan="2">TBL</th>
+                <th colspan="2">BOS</th>
+            </tr>
+            <tr>
+                <th>W</th>
+                <th>L</th>
+                <th>W</th>
+                <th>L</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>October</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>November</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>December</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>April</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <form>
+        <label for="chooseTeam">Choose a team</label>
+        <select id="chooseTeam" required>
+            <option value="" style="display: none">select a team</option>
+            <option value="tbl">TBL</option>
+            <option value="bos">BOS</option>
+        </select>
+        <label for="chooseMonthDD">Choose a month</label>
+        <select id = "chooseMonthDD" required>
+            <option style="display: none" value="">select a month</option>
+            <option value="oct">October</option>
+            <option value="nov">November</option>
+            <option value="dec">December</option>
+            <option value="jan">January</option>
+            <option value="feb">February</option>
+            <option value="mar">March</option>
+        </select>
+        <br/>
+        <button type="button">Tell Me My Chances</button>
+        <p>The chances your team is going to win this month is <b>result goes here</b> </p>
+    </form>
+    <p>To calculate a simple probability, we need to follow these steps:</p>
+    <ol>
+        <li>calculate average mean<a href="https://www.mathsisfun.com/mean.html" rel="noreferrer" target ="_blank">&#8599;</a><sup>2</sup></li>
+        <li>calculate standard deviation<a href="https://www.mathsisfun.com/data/standard-deviation-formulas.html" rel="noreferrer" target ="_blank">&#8599;</a><sup>2</sup></li>
+        <li>subtract mean average from a data point</li>
+        <li>divide the number from step 3 by the number in step 2</li>
+        <li>use the z-score table to find your probability<a href="https://www.onlinemathlearning.com/z-score.html" rel="noreferrer" target ="_blank">&#8599;</a><sup>3</sup></li>
+    </ol>
+
+    <p>this is the complete formula:</p>
+    <!--<annotation encoding="application/x-tex">z=\dfrac{\text{data point}-\text{mean}}{\text{standard deviation}}</annotation> -->
+    <p>Imagine you have hundred thousands of data like this. <a href="#bddef" style="color: black">Big Data</a> analysis allows you to predict certain outcomes based on previous occurrences using statistical and mathematical equations</p>
+</section>
+<section>
+    <h2>The Future of <a href="#bddef" style="color: black">Big Data</a></h2>
+    <ul>
+        <li><b>Machine Learning will be the next big thing.</b> It will help businesses with preparing data and conduction analysis.<a href="https://www.mathsisfun.com/mean.html" rel="noreferrer" target ="_blank">&#8599;</a><sup>4</sup></li>
+        <li><b>Privacy will be a challenge.</b> The stakes of security will be higher due the increasing volumes of data. If there is not an efficient way to deal with this, the trend will fade very quickly.<a href="https://www.mathsisfun.com/mean.html" rel="noreferrer" target ="_blank">&#8599;</a><sup>4</sup></li>
+        <li><b>Big Data Intelligent Apps.</b> Another way that enterprises are using machine learning and AI technologies is to create intelligent apps<a href="https://www.datamation.com/big-data/big-data-trends.html" rel="noreferrer" target ="_blank">&#8599;</a><sup>5</sup></li>
+        <li><b><abbr title = "Internet Of Things">IoT</abbr>.</b> The Internet of Things is also likely to have a sizable impact on big data<a href="https://www.datamation.com/big-data/big-data-trends.html" rel="noreferrer" target ="_blank">&#8599;</a><sup>5</sup></li>
+        <li><b>BlockChain.</b> Blockchain will provide participants a high level of trust and security<a href="https://www.blockchain-council.org/blockchain/how-to-leverage-blockchain-for-making-machine-learning-models-more-accessible/" rel="noreferrer" target ="_blank">&#8599;</a><sup>6</sup></li>
+        <li><b>Augmented reality.</b> the ever-growing complexity of neural networks means that AI programs of the future will be able to wow us with much more visually impressive renditions than current AR initiatives can produce<a href="https://www.blockchain-council.org/blockchain/how-to-leverage-blockchain-for-making-machine-learning-models-more-accessible/" rel="noreferrer" target ="_blank">&#8599;</a><sup>7</sup></li>
+    </ul>
+
+    <aside>Jeff Houpt - President at DocInfusion, says that the landscape of big data that is the usage will become easier and simpler. He is sharing that
+        the big data is evolving from highly technical and expensive to more self-service. So we would be charged for what we use.</aside>
+</section>
+<section>
+    <div>
+        <ol>
+            <li><cite>https://en.wikipedia.org/wiki/Big_data</cite></li>
+            <li><cite>https://www.mathsisfun.com</cite></li>
+            <li><cite>https://www.onlinemathlearning.com/</cite></li>
+            <li><cite>https://www.agiliacenter.com/predictions-future-big-data-2/?lang=en</cite></li>
+            <li><cite>https://www.datamation.com/big-data/big-data-trends.html</cite></li>
+            <li><cite>https://www.blockchain-council.org/blockchain/how-to-leverage-blockchain-for-making-machine-learning-models-more-accessible/</cite></li>
+            <li><cite>https://www.smartdatacollective.com/how-big-data-is-transforming-augmented-reality/</cite></li>
+        </ol>
+    </div>
+</section>
+<footer>
+    <div class="container-fluid">
+        <a href="https://github.com/cis2910ctransformers/cis2910ctransformers/graphs/contributors">Contributors on Github
+            <i class="fab fa-github"></i></a>
+        <div id="copyright">
+            &copy;<small>Transformers 2020</small>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
