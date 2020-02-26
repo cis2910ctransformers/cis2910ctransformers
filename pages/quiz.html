@@ -6,38 +6,60 @@
     <script src="../js/dragAndDrop.js"></script>
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
     <title>Quiz</title>
+    <style>
+        #bdquestions li {
+            position: relative;
+            width: 20%;
+            z-index: 9;
+            background-color: #f1f1f1;
+            border: 1px solid #d3d3d3;
+            margin:10px;
+            text-align: center;
+        }
+
+        #bdanswer {
+            padding: 10px;
+            cursor: move;
+            z-index: 10;
+            background-color:lightblue;
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
+<main>
+    <h1>Now let's take a quiz</h1>
+    <section>
+        <h2>Question 1:</h2>
+        <p>What is the language used in Big Data?</p>
+        <ol id="bdquestions">
+            <li draggable="true" ondragstart="dragStart(event)" id="html">HTML</li>
+            <li draggable="true" ondragstart="dragStart(event)"id="python">Python</li>
+            <li draggable="true" ondragstart="dragStart(event)"id="ruby">Ruby</li>
+            <li draggable="true" ondragstart="dragStart(event)"id="pascal">Pascal</li>
+        </ol>
+        <br/>
+        <p id="bdanswer" ondrop="dragDrop(event)" ondragover="allowDrop(event)">Please drag your answer here</p>
+    </section>
+</main>
+<footer>
 
-    </header>
-    <main>
-        <h1>Now let's take a quiz</h1>
-        <section>
-            <h2>Question 1:</h2>
-            <p>What is the language used in Big Data?</p>
-            <ul id="questions">
-                <li draggable="true">HTML</li>
-                <li draggable="true">Python</li>
-                <li draggable="true">Ruby</li>
-                <li draggable="true">Pascal</li>
-            </ul>
-            <br />
-            <p id="answer">Please drag your answer here</p>
-            <hr />
-            <br />
-            <br />
-            <hr />
-        </section>
-    </main>
-    <footer>
+</footer>
+<script>
+    function allowDrop(ev){
+        ev.preventDefault();
+    }
+    function dragStart(ev){
+        ev.dataTransfer.setData("text", ev.target.id)
+    }
 
-    </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", addDnDHandlers, false);
-    </script>
+    function dragDrop(ev){
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    }
+</script>
 
 </body>
-
 </html>
