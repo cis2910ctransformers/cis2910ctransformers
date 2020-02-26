@@ -2,181 +2,15 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Museum | Home</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="../styles/styles.css" />
-
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #fafafa;
-  font-family: Helvetica, sans-serif;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: #FF9F55;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-
-/* Container around content */
-.containerTime {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-/* The circles on the timeline */
-.containerTime::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #FF9F55;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/* Place the container to the left */
-.left {
-  left: -5px;
-}
-
-/* Place the container to the right */
-.right {
-  left: 50.3%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #d0d1d5;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #d0d1d5 transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-  border-style: solid;
-  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
-}
-
-.content:Hover{
-  border-style: solid;
-  border-color: #FF9F55;
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .timeline::after {
-  left: 31px;
-  }
-  
-  /* Full-width containers */
-  .containerTime {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
-  }
-  
-  /* Make sure that all arrows are pointing leftwards */
-  .containerTime::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #dfe0e4 transparent transparent;
-  }
-
-  /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-  left: 3px;
-  }
-
-  /* Make all right containers behave like the left ones */
-  .left {
-  left: 15px;
-  }
-  
-  /* Make all right containers behave like the right ones */
-  .right {
-  left: 3.3%;
-  }
-}
-
-.scrollup, .scrollup:hover, .scrollup:focus{
-  width: 40px;
-  height: 40px;
-  background-image: url(../images/icon_top.png);
-  display: block;
-  color: transparent;
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  opacity: .5;
-
-}
-</style>
-  </head>
-<div id="topScroll"></div>
+    <title>Museum | History</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <link rel="stylesheet" href="../styles/style-history.css" />
+</head>
+<body>
+<div id="topscroll"></div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <img src="./../images/ai.png" height="50" width="50" alt="AI logo">
     <a class="navbar-brand" href="./../index.html">AI Museum</a>
@@ -193,64 +27,126 @@ body {
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <a class="nav-item nav-link" href="./../index.html"rel="noopener noreferrer">Home <i class="fas fa-home"></i></a>
-            <a class="nav-item nav-link" href="history.html"rel="noopener noreferrer">History <i class="fas fa-landmark"></i></a>
+            <a class="nav-item nav-link active" href="history.html"rel="noopener noreferrer">History <i class="fas fa-landmark"></i></a>
             <a class="nav-item nav-link" href="machine-learning.htm" lrel="noopener noreferrer">Machine Learning <i class="fas fa-robot"></i></a>
-            <a class="nav-item nav-link active" href="big-data.html" rel="noopener noreferrer">BigData <i class="fas fa-database"></i><span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="big-data.html" rel="noopener noreferrer">BigData <i class="fas fa-database"></i><span class="sr-only">(current)</span></a>
 
         </div>
     </div>
 </nav>
-<body>
-  <header></header>
+<header></header>
   <main>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-lg-12 col-md-12">
-          <h1 class="text-center">A Short History Of Artificial Intelligence</h1>
+    <div id="particles-bg"></div>
+    <div class="bg-title">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <h1 class="text-center">A short history of Artificial Intelligence</h1>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <p class="text-left">The history of Artificial Intelligence (AI) began in antiquity, with myths, stories and rumors of artificial beings endowed with intelligence or consciousness by master craftsmen. The seeds of modern AI were planted by classical philosophers who attempted to describe the process of human thinking as the mechanical manipulation of symbols. This work culminated in the invention of the programmable digital computer in the 1940s, a machine based on the abstract essence of mathematical reasoning. This device and the ideas behind it inspired a handful of scientists to begin seriously discussing the possibility of building an electronic brain.</p>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <p class="text-left">Investment and interest in AI boomed in the first decades of the 21st century, when machine learning was successfully applied to many problems in academia and industry due to new methods, the application of powerful computer hardware, and the collection of immense data sets.</p>
+          </div>
+        </div> 
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <hr>
+            <h3>Timeline</h3>
+          </div>
+        </div> 
+        <div class="row">
+          <div class="col-sm-12 col-lg-12 col-md-12">
+            <div  class="size-h"> 
+                    <ul class="timelineh timeline-horizontal">
+                      <li class="timeline-item">
+                        <a href="#1960"><div class="timeline-badge primary">1960s</div></a>
+                      </li>
+                      <li class="timeline-item">
+                        <a href="#1970"><div class="timeline-badge success">1970s</div></a>
+                      </li>
+                      <li class="timeline-item">
+                        <a href="#1726"><div class="timeline-badge info">1980s</div></a>
+                      </li>
+                      <li class="timeline-item">
+                        <a href="#1736"><div class="timeline-badge danger">1990s</div></a>
+                      </li>
+                      <li class="timeline-item">
+                        <a href="#1736"><div class="timeline-badge warning">2000s</div></a>
+                     </li>
+                      <li class="timeline-item">
+                        <div class="timeline-badge"></div>
+                      </li>
+                      <li class="timeline-item">
+                        <a href="#1666"><div class="timeline-badge success">1666</div></a>
+                      </li>
+                      <li class="timeline-item">
+                        <a href="#1726"><div class="timeline-badge info">1726</div></a>
+                      </li>
+                      <li class="timeline-item">
+                        <a href="#1736"><div class="timeline-badge danger"></div></a>
+                      </li>
+                    </ul>
+            </div>  
+          </div>
+        </div>   
       </div>
     </div>
-    
   <section>
-    <div class="timeline">
+  <div class="timeline">
+  <div id="1960"></div>
   <div class="containerTime left">
-    <div class="content">
-      <h2>1308</h2>
+    <div class="content ">
+      <h2>1960's</h2>
       <div class="card">
-        <img class="card-img-top" src="../images/1308.png" alt="...">
+        <div class="imgcenter">
+          <a href="year.html?year=1960"><img class="card-img-top" src="../images/1960.jpg" alt="..."></a>
+        </div>
         <div class="card-body">
-          <p class="card-text">Catalan poet and theologian Ramon Llull publishes Ars generalis ultima (The Ultimate General Art), further perfecting his method of using paper-based mechanical means to create new knowledge from combinations of concepts.</p>
+          <p class="card-text">Ray Solomonoff was the inventor of algorithmic probability, his General Theory of Inductive Inference (also known as Universal Inductive Inference) and was a founder of algorithmic information theory. He was an originator of the branch of artificial intelligence based on machine learning, prediction and probability.</p>
         </div>
       </div>
     </div>
   </div>
+  <div id="1970"></div>
   <div class="containerTime right">
     <div class="content">
-      <h2>1666</h2>
+      <h2>1970's</h2>
       <div class="card">
-        <img class="card-img-top" src="../images/1666.png" alt="...">
+        <div class="imgcenter">
+          <img class="card-img-top" src="../images/1970.jpg" alt="...">
+        </div>
         <div class="card-body">
-          <p class="card-text">Mathematician and philosopher Gottfried Leibniz publishes Dissertatio de arte combinatoria (On the Combinatorial Art), following Ramon Llull in proposing an alphabet of human thought and arguing that all ideas are nothing but combinations of a relatively small number of simple concepts.</p>
+          <p class="card-text">The WABOT-1 was the first fun-scale anthropomorphic robot developed in the world. It consisted of a limb-control system, a vision system and a conversation system. The WABOT-1 was able to communicate-with a person in Japanese and to measure distances and directions to the objects using external receptors, artificial ears and eyes, and an artificial mouth.</p>
         </div>
       </div>
     </div>
   </div>
+  <div id="1726"></div>
   <div class="containerTime left">
     <div class="content">
       <h2>1726</h2>
       <div class="card">
-        <img class="card-img-top" src="../images/1726.png" alt="...">
+        <div class="imgcenter">
+          <img class="card-img-top imgcenter" src="../images/1726.png" alt="...">
+        </div>
         <div class="card-body">
           <p class="card-text">Jonathan Swift publishes Gulliver's Travels, which includes a description of the Engine, a machine on the island of Laputa (and a parody of Llull's ideas): "a Project for improving speculative Knowledge by practical and mechanical Operations." By using this "Contrivance," "the most ignorant Person at a reasonable Charge, and with a little bodily Labour, may write Books in Philosophy, Poetry, Politicks, Law, Mathematics, and Theology, with the least Assistance from Genius or study."</p>
         </div>
       </div>
     </div>
   </div>
+  <div id="1736"></div>
   <div class="containerTime right">
     <div class="content">
       <h2>1736</h2>
       <div class="card">
-        <img class="card-img-top" src="../images/1736.png" alt="...">
+        <div class="imgcenter">
+          <img class="card-img-top imgcenter" src="../images/1736.png" alt="...">
+        </div>
         <div class="card-body">
           <p class="card-text">Thomas Bayes develops a framework for reasoning about the probability of events. Bayesian inference will become a leading approach in machine learning.</p>
         </div>
@@ -277,36 +173,19 @@ body {
   <br>
   <br>
   <br>
-  
-<footer>
-      <div class="container-fluid">
-        <a
-          href="https://github.com/cis2910ctransformers/cis2910ctransformers/graphs/contributors"
-          >Contributors on Github <i class="fab fa-github"></i
-        ></a>
-        <div id ="copyright">
-          &copy;<small>Transformers 2020</small>
+  <footer>
+    <div class="container-fluid">
+      <a href="https://github.com/cis2910ctransformers/cis2910ctransformers/graphs/contributors">Contributors on Github
+        <i class="fab fa-github"></i></a>
+      <div id="copyright">
+        &copy;<small>Transformers 2020</small>
       </div>
-      </div>
-    </footer>
-  <div class="menu">
-      <a href="#topScroll" class="scrollup">Up</a>
-  </div>
+    </div>
+  </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="../js/smoothscrolling.jquery.js"></script>
-  <script>
-      $(document).ready(function(){
-        $(".menu a").smoothscrolling();
-
-        $(window).scroll(function(){
-          if ($(this).scrollTop()>100){
-            $('.scrollup').fadeIn();
-          } else {
-            $('.scrollup').fadeOut();
-          }
-        });
-
-      });
-    </script>
+  
+  <script src="../js/particles.js"></script>
+  <script src="../js/history.js"></script>
+<a id="scrollTop" title="Back to top" href="#"></a>
 </body>
 </html>
