@@ -1,41 +1,25 @@
-# cis2910ctransformers
-[![Forks](https://img.shields.io/github/forks/cis2910ctransformers/cis2910ctransformers?style=flat-square)](#)
-[![Stars](https://img.shields.io/github/stars/cis2910ctransformers/cis2910ctransformers?style=flat-square)](#)
-[![Issues](https://img.shields.io/github/issues/cis2910ctransformers/cis2910ctransformers?style=flat-square)](#)
-[![License](https://img.shields.io/github/license/cis2910ctransformers/cis2910ctransformers?style=flat-square)](#)
+<h1 align="center">Welcome to cis2910ctransformers 👋</h1>
+<p>
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
 
-## About
+> Project for CIS2910C (IT Capstone)
 
-Project for CIS2910C (IT Capstone)
+### 🏠 [Homepage](https://cis2910ctransformers.github.io/cis2910ctransformers/index.html)
 
-## Dependencies
+## Author
 
-- Bootstrap
-- Particles.JS
-- JQuery
-- FontAwesome
+👤 **Conner Luzier**
+👤 **Daniel Fernandez**
+👤 **Jairo Garcia**
+👤 **Oleksiy Kyrylenko**
 
-## Installation
+## 🤝 Contributing
 
-`$ git clone https://github.com/cis2910ctransformers/cis2910ctransformers`
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/cis2910ctransformers/cis2910ctransformers/issues). 
 
-## Folder Structure
+## Show your support
 
-```MARKDOWN
-cis2910ctransformers
-├─── index.html
-├─── images
-│     └── ai.png
-├─── pages
-│     ├── history.html
-│     ├── machine-learning.html
-│     └── big-data.html
-├─── styles
-│     └── styles.css
-├─── js
-│     └── particles.js
-├─── assets
-│     └── particles.json
-└── README.md
-
-```
+Give a ⭐️ if this project helped you!
