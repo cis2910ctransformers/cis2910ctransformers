@@ -1,12 +1,6 @@
 body,
 html {
   scroll-behavior: smooth;
-  animation: fadeIn 1s ease-in-out;
-  background-color: blanchedalmond;
-}
-
-.nav-link:hover {
-  animation: pulse 2s ease-in-out infinite;
 }
 
 #particles-js {
@@ -23,85 +17,73 @@ html {
 footer {
   position: relative;
   padding: 1%;
-  background-color: #f5f5f5;
 }
 
-ul.horizontal-list>li{
-  display:inline;
+ul.horizontal-list>li {
+  display: inline;
 }
 
-table{
+table {
   margin-left: auto;
   margin-right: auto;
 }
-thead,tbody, tfoot, tr, td, th{
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
   border-collapse: collapse;
-  padding:5px;
-  margin:5px;
+  padding: 5px;
+  margin: 5px;
 }
 
-table th{
+table th {
   text-align: center;
   background-color: cadetblue;
 }
+
 tr:hover {
   background-color: #f5f5f5;
 }
 
-nav>img{
+nav>img {
   margin-right: 10px;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+#languagesusedinbd {
+  float: right;
 }
 
-@keyframes pulse {
-  0% {
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
-  }
-  50% {
-  -webkit-transform: scale3d(1.05, 1.05, 1.05);
-  transform: scale3d(1.05, 1.05, 1.05);
-  }
-  100% {
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
-  }
+#applicationofbd {
+  float: left;
 }
 
-#languagesusedinbd{
-    float: right;
+button.calculatechances:hover,
+button.calculatechances:focus,
+select:hover,
+select:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, .75);
 }
 
-#applicationofbd{
-float: left;
-}
-
-button.calculatechances:hover, button.calculatechances:focus, select:hover, select:focus{
-  box-shadow: 0 0 5px rgba(0,0,0, .75);
-}
-
-button.calculatechances, select{
+button.calculatechances,
+select {
   background-color: lightblue;
   border-radius: 10px;
 }
 
-section>header{
+section>header {
   color: dimgray;
   font-weight: bolder;
   text-shadow: 0px 4px 3px dodgerblue;
 }
 
-p{
+p {
   font-size: 1.1em;
-  width:50%;
+  width: 50%;
 }
 
-
+.jumbotron {
+  background-color: blanchedalmond;
+}
