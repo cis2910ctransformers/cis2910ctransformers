@@ -23,19 +23,37 @@ Project for CIS2910C (IT Capstone)
 
 ```MARKDOWN
 cis2910ctransformers
-├─── index.html
-├─── images
-│     └── ai.png
-├─── pages
-│     ├── history.html
-│     ├── machine-learning.html
-│     └── big-data.html
-├─── styles
-│     └── styles.css
-├─── js
-│     └── particles.js
-├─── assets
-│     └── particles.json
-└── README.md
-
+├── CODE_OF_CONDUCT.md
+├── LICENSE
+├── README.md
+├── assets
+│   └── particles.json
+├── images
+│   ├── 1960.jpg
+│   ├── 1961.jpg
+│   ├── 1970.jpg
+│   ├── BigData.png
+│   ├── Face-ID2.jpg
+│   ├── Google\ Assist\ Image.jpg
+│   ├── ai.png
+│   ├── icon_top.png
+│   ├── java_logo.jpeg
+│   ├── python_logo.jpg
+│   ├── r_logo.jpeg
+│   ├── robots.jpg
+│   └── sql_logo.jpeg
+├── index.html
+├── js
+│   ├── particles.js
+│   ├── scroll.js
+│   └── smoothscrolling.jquery.js
+├── pages
+│   ├── big-data.html
+│   ├── history.html
+│   ├── machine-learning.html
+│   ├── quiz.html
+│   └── year.html
+└── styles
+    ├── style-history.css
+    └── styles.css
 ```
