@@ -9,7 +9,7 @@
 
 ### 🏠 [Homepage](https://cis2910ctransformers.github.io/cis2910ctransformers/index.html)
 
-## Author
+## Authors
 <ul>
   <li>👤 Conner Luzier</li>
   <li>👤 Daniel Fernandez</li>
