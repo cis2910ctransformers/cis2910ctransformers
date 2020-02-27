@@ -16,6 +16,7 @@
   <li>👤 Jairo Garcia</li>
   <li>👤 Oleksiy Kyrylenko</li>
 </ul>
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/cis2910ctransformers/cis2910ctransformers/issues). 
