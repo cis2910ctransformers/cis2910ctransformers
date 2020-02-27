@@ -10,12 +10,12 @@
 ### 🏠 [Homepage](https://cis2910ctransformers.github.io/cis2910ctransformers/index.html)
 
 ## Author
-
-👤 **Conner Luzier**
-👤 **Daniel Fernandez**
-👤 **Jairo Garcia**
-👤 **Oleksiy Kyrylenko**
-
+<ul>
+  <li>👤 Conner Luzier</li>
+  <li>👤 Daniel Fernandez</li>
+  <li>👤 Jairo Garcia</li>
+  <li>👤 Oleksiy Kyrylenko</li>
+</ul>
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/cis2910ctransformers/cis2910ctransformers/issues). 
