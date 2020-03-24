@@ -3,7 +3,6 @@
 
 <head>
     <title>Big Data</title>
-    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
     <meta charset="UTF-8">
     <meta name="Author of this page" content="Oleksiy Kyrylenko">
     <meta name="Project" content="CIS2910C Valencia Sprint 2020 Transformers">
@@ -14,6 +13,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/big-data.css">
 
     <script src="../js/particles.js"></script>
     <script>
@@ -53,26 +53,34 @@
     </nav>
     <div class="jumbotron">
         <h1 class="display-4">Big Data</h1>
+        <ul class="list-group list-group-horizontal" style="flex-direction: row !important;">
+            <li class="list-group-item"><a href="#developments">Developments</a></li>
+            <li class="list-group-item"><a href="#accomplishments">Accomplishments</a></li>
+            <li class="list-group-item"><a href="#video">Video</a></li>
+        </ul>
     </div>
-    <div class="container">
-        <img src="../images/BigData.png" class="img-fluid" style="float: right; height: 40vmin;" alt="Big Data">
+    <div class="bd-Image container">
+        <img src="../images/BigData.png" class="img-fluid" style="height: 40vmin;" alt="Big Data">
+    </div>
+
+
+    <section class="container" id="whatisbd">
         <h1 class="display-6">What is Big Data?</h1>
+        <p>
         <dfn id="bddef"><strong><em>Big Data</em></strong></dfn> is a field that treats ways to analyze,
         systematically extract information from, or otherwise deal with data sets that are too large or complex
         to be dealt with by traditional data-processing application software. Data with many cases (rows) offer
         greater statistical power, while data with higher complexity (more attributes or columns)
         may lead to a higher false discovery rat<a href="https://en.wikipedia.org/wiki/Big_data" rel="noreferrer"
             target="_blank">&#8599;</a><sup>1</sup></p>
-
-        <div class="container">
+    </section>
+        <section class="container" id="bd_history">
             <h1 class="display-6">Big Data History</h1>
             <p>This is the history found at<sup>1</sup></p>
-            <div>
-                The slide show will go here
-            </div>
-        </div>
+                <img src="../images/Arthur_Fremont_Rider_1905_p64.jpg" alt="Artur Fremont">
 
-        <div class="container">
+        </section>
+        <section class="container" id="applicationofbd">
             <h1 class="display-6">Application of Big Data</h1>
             <p>This is a list of areas where <a href="#bddef" style="color: black">Big Data</a> is the most used:</p>
             <ul>
@@ -84,14 +92,14 @@
                 <li>Robotics</li>
                 <li>General intelligence</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="container">
+        <section class="container" id="how_bd_works">
             <h1 class="display-6">How Does Big Data Work?</h1>
-            <embed src="https/www.youtube.com">
-        </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ps6HweFb5LI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
 
-        <div class="container">
+        <section class="container" id="languagesusedinbd">
             <h1 class="display-6">Languages used in Big Data:</h1>
             <ul>
                 <li>
@@ -127,9 +135,9 @@
                     </figure>
                 </li>
             </ul>
-        </div>
+        </section>
 
-        <div class="container">
+        <section class="container">
             <h1 class="display-6">Examples of Big Data Usage</h1>
             <p>For example you have <dfn><abbr title="National Hockey League">NHL</abbr></dfn> Statistics. In this
                 example
@@ -256,9 +264,9 @@
             <p>Imagine you have hundred thousands of data like this. <a href="#bddef" style="color: black">Big Data</a>
                 analysis allows you to predict certain outcomes based on previous occurrences using statistical and
                 mathematical equations</p>
-        </div>
+        </section>
 
-        <div class="container">
+        <section class="container">
             <h1 class="display-6">The Future of Big Data</h1>
             <ul>
                 <li><b>Machine Learning will be the next big thing.</b> It will help businesses with preparing data and
@@ -296,7 +304,7 @@
                 charged
                 for what we use.</aside>
 
-            <div>
+            <div id="references">
                 <ol>
                     <li><cite>https://en.wikipedia.org/wiki/Big_data</cite></li>
                     <li><cite>https://www.mathsisfun.com</cite></li>
@@ -309,8 +317,7 @@
                     </li>
                 </ol>
             </div>
-        </div>
-    </div>
+        </section>
 
     <footer>
         <div class="container-fluid">
