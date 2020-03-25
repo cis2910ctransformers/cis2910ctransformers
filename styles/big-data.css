@@ -1,6 +1,3 @@
-body{
-    background-color: rgba(230, 235, 231, 1) ;
-}
 div.bd-Image{
     display: block;
     margin: auto;
@@ -22,9 +19,6 @@ div.bd-Image{
 
 #languagesusedinbd ul{
     list-style-type: none;
-}
-section>h1{
-    font-size: 1.7em;
 }
 tbody>tr>td:nth-child(1){
     font-style: italic;

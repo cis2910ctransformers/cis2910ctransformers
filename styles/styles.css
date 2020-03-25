@@ -35,6 +35,7 @@ tr,
 td,
 th {
   border-collapse: collapse;
+  border:1px solid midnightblue;
   padding: 5px;
   margin: 5px;
 }
