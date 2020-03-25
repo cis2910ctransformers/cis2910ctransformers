@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <title>Big Data</title>
-    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
     <meta charset="UTF-8">
     <meta name="Author of this page" content="Oleksiy Kyrylenko">
     <meta name="Project" content="CIS2910C Valencia Sprint 2020 Transformers">
@@ -14,17 +13,113 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/big-data.css">
 
-    <script src="../js/particles.js"></script>
-    <script>
-        particlesJS.load('particles-js', '../assets/particles.json', function () {
-            console.log('callback - particles.js config loaded');
-        });
-    </script>
     <style>
+        img {vertical-align: middle;}
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: black;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation         */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+
+        @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .prev, .next,.text {font-size: 11px}
+        }
+
         header>img {
             width: 100%;
             height: 250px;
+        }
+
+        .slideshow-container>div>img{
+            width: 100px;
+            height: 500px;
         }
     </style>
 </head>
@@ -53,26 +148,68 @@
     </nav>
     <div class="jumbotron">
         <h1 class="display-4">Big Data</h1>
+        <ul class="list-group list-group-horizontal" style="flex-direction: row !important;">
+            <li class="list-group-item"><a href="#whatisbd">What is Big Data</a></li>
+            <li class="list-group-item"><a href="#bd_history">History</a></li>
+            <li class="list-group-item"><a href="#how_bd_works">How it works</a></li>
+            <li class="list-group-item"><a href="#languagesusedinbd">Languages used</a></li>
+            <li class="list-group-item"><a href="#examplesOfBD">Examples</a></li>
+            <li class="list-group-item"><a href="#futureOfBD">The Future of Big Data</a></li>
+            <li class="list-group-item"><a href="quiz.html">Quiz</a></li>
+        </ul>
     </div>
-    <div class="container">
-        <img src="../images/BigData.png" class="img-fluid" style="float: right; height: 40vmin;" alt="Big Data">
+    <div class="bd-Image container">
+        <img src="../images/BigData.png" class="img-fluid" style="height: 40vmin;" alt="Big Data">
+    </div>
+
+
+    <section class="container" id="whatisbd">
         <h1 class="display-6">What is Big Data?</h1>
+        <p>
         <dfn id="bddef"><strong><em>Big Data</em></strong></dfn> is a field that treats ways to analyze,
         systematically extract information from, or otherwise deal with data sets that are too large or complex
         to be dealt with by traditional data-processing application software. Data with many cases (rows) offer
         greater statistical power, while data with higher complexity (more attributes or columns)
         may lead to a higher false discovery rat<a href="https://en.wikipedia.org/wiki/Big_data" rel="noreferrer"
             target="_blank">&#8599;</a><sup>1</sup></p>
-
-        <div class="container">
+    </section>
+        <section class="container" id="bd_history">
             <h1 class="display-6">Big Data History</h1>
-            <p>This is the history found at<sup>1</sup></p>
-            <div>
-                The slide show will go here
-            </div>
-        </div>
+            <div class="slideshow-container">
 
-        <div class="container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="../images/bdh_03.jpg" style="width:100%">
+                    <div class="text">Data analysis, data analytics and Big Data originate from the longstanding domain of database management. It relies heavily on the storage, extraction, and optimization techniques that are common in data that is stored in Relational Database Management Systems (RDBMS)</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="../images/bdh_02.png" style="width:100%">
+                    <div class="text">Since the early 2000s, the Internet and the Web began to offer unique data collections and data analysis opportunities. With the expansion of web traffic and online stores, companies such as Yahoo, Amazon and eBay started to analyze customer behavior by analyzing click-rates, IP-specific location data and search logs. This opened a whole new world of possibilities.</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="../images/bdh_01.png" style="width:100%">
+                    <div class="text">Although web-based unstructured content is still the main focus for many organizations in data analysis, data analytics, and big data, the current possibilities to retrieve valuable information are emerging out of mobile devices</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+
+        </section>
+        <section class="container" id="applicationofbd">
             <h1 class="display-6">Application of Big Data</h1>
             <p>This is a list of areas where <a href="#bddef" style="color: black">Big Data</a> is the most used:</p>
             <ul>
@@ -84,14 +221,14 @@
                 <li>Robotics</li>
                 <li>General intelligence</li>
             </ul>
-        </div>
+        </section>
 
-        <div class="container">
+        <section class="container" id="how_bd_works">
             <h1 class="display-6">How Does Big Data Work?</h1>
-            <embed src="https/www.youtube.com">
-        </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ps6HweFb5LI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
 
-        <div class="container">
+        <section class="container" id="languagesusedinbd">
             <h1 class="display-6">Languages used in Big Data:</h1>
             <ul>
                 <li>
@@ -127,10 +264,10 @@
                     </figure>
                 </li>
             </ul>
-        </div>
+        </section>
 
-        <div class="container">
-            <h1 class="display-6">Examples of Big Data Usage</h1>
+        <section class="container">
+            <h1 id="examplesOfBD" class="display-6">Examples of Big Data Usage</h1>
             <p>For example you have <dfn><abbr title="National Hockey League">NHL</abbr></dfn> Statistics. In this
                 example
                 we will take statistics for Tampa Bay Lightnings(<b><abbr title="Tampa Bay Lightning">TBA</abbr></b>)
@@ -160,63 +297,63 @@
                     <tbody>
                         <tr>
                             <td>October</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>8</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>6</td>
                         </tr>
                         <tr>
                             <td>November</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>8</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>6</td>
                         </tr>
                         <tr>
                             <td>December</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>11</td>
+                            <td>2</td>
+                            <td>10</td>
+                            <td>4</td>
                         </tr>
                         <tr>
                             <td>January</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>6</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>3</td>
                         </tr>
                         <tr>
                             <td>February</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>9</td>
+                            <td>4</td>
+                            <td>9</td>
+                            <td>4</td>
                         </tr>
                         <tr>
                             <td>March</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>9</td>
+                            <td>5</td>
+                            <td>11</td>
+                            <td>5</td>
                         </tr>
                         <tr>
                             <td>April</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>7</td>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>8</td>
                         </tr>
                         <tr>
                             <td>Total</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>58</td>
+                            <td>29</td>
+                            <td>55</td>
+                            <td>36</td>
                         </tr>
                 </table>
             </div>
-            <form>
+            <br>
                 <label for="chooseTeam">Choose a team</label>
                 <select id="chooseTeam" required>
                     <option value="" style="display: none">select a team</option>
@@ -232,12 +369,15 @@
                     <option value="jan">January</option>
                     <option value="feb">February</option>
                     <option value="mar">March</option>
+                    <option value="apr">April</option>
                 </select>
-                <br />
-                <button type="button">Tell Me My Chances</button>
-                <p>The chances your team is going to win this month is <b>result goes here</b> </p>
+                <button type="button" style="margin-left: 50px" onclick="calculateProbability()" >Tell Me My Chances</button>
+            <br>
+                <span id="chancesOutput"></span>
+            <br>
+            <br>
             </form>
-            <p>To calculate a simple probability, we need to follow these steps:</p>
+            <p>To calculate this value we need to follow these steps:</p>
             <ol>
                 <li>calculate average mean<a href="https://www.mathsisfun.com/mean.html" rel="noreferrer"
                         target="_blank">&#8599;</a><sup>2</sup></li>
@@ -250,15 +390,12 @@
                         href="https://www.onlinemathlearning.com/z-score.html" rel="noreferrer"
                         target="_blank">&#8599;</a><sup>3</sup></li>
             </ol>
-
-            <p>this is the complete formula:</p>
-            <!--<annotation encoding="application/x-tex">z=\dfrac{\text{data point}-\text{mean}}{\text{standard deviation}}</annotation> -->
             <p>Imagine you have hundred thousands of data like this. <a href="#bddef" style="color: black">Big Data</a>
                 analysis allows you to predict certain outcomes based on previous occurrences using statistical and
                 mathematical equations</p>
-        </div>
+        </section>
 
-        <div class="container">
+        <section id="futureOfBD" class="container">
             <h1 class="display-6">The Future of Big Data</h1>
             <ul>
                 <li><b>Machine Learning will be the next big thing.</b> It will help businesses with preparing data and
@@ -288,15 +425,7 @@
                         href="https://www.blockchain-council.org/blockchain/how-to-leverage-blockchain-for-making-machine-learning-models-more-accessible/"
                         rel="noreferrer" target="_blank">&#8599;</a><sup>7</sup></li>
             </ul>
-
-            <aside>Jeff Houpt - President at DocInfusion, says that the landscape of big data that is the usage will
-                become
-                easier and simpler. He is sharing that
-                the big data is evolving from highly technical and expensive to more self-service. So we would be
-                charged
-                for what we use.</aside>
-
-            <div>
+            <div id="references">
                 <ol>
                     <li><cite>https://en.wikipedia.org/wiki/Big_data</cite></li>
                     <li><cite>https://www.mathsisfun.com</cite></li>
@@ -309,8 +438,7 @@
                     </li>
                 </ol>
             </div>
-        </div>
-    </div>
+        </section>
 
     <footer>
         <div class="container-fluid">
@@ -322,6 +450,61 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+        
+        function calculateProbability() {
+            var percentage;
+            var team = document.getElementById("chooseTeam").value;
+            var month = document.getElementById("chooseMonthDD").value;
+            if(team == "tbl"){
+                if(month == "oct") percentage = 55;
+                if(month == "nov") percentage = 55;
+                if(month == "dec") percentage = 85;
+                if(month == "jan") percentage = 81;
+                if(month == "feb") percentage = 60;
+                if(month == "mar") percentage = 60;
+                if(month == "apr") percentage = 69;
+            }else if(team=="bos"){
+                if(month == "oct") percentage = 94;
+                if(month == "nov") percentage = 64;
+                if(month == "dec") percentage = 78;
+                if(month == "jan") percentage = 77;
+                if(month == "feb") percentage = 67;
+                if(month == "mar") percentage = 89;
+                if(month == "apr") percentage = 77;
+            }else{
+                percentage = "cannot be calculated";
+            }
+
+            document.getElementById("chancesOutput").innerHTML="Your chances are " +percentage +"%";
+        }
+    </script>
 </body>
 
 </html>

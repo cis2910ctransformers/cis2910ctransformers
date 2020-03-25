@@ -1,0 +1,62 @@
+div.bd-Image{
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 500px;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+
+#whatisbd{
+}
+
+#bd_history{
+}
+
+
+#how_bd_works{
+}
+
+#languagesusedinbd ul{
+    list-style-type: none;
+}
+tbody>tr>td:nth-child(1){
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+
+#references{
+    background-color: #d1bd10;
+}
+
+button.calculatechances:hover,
+button.calculatechances:focus,
+select:hover,
+select:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .75);
+}
+
+button.calculatechances,
+
+button.calculatechances:hover, button.calculatechances:focus, select:hover, select:focus{
+    box-shadow: 0 0 5px rgba(0,0,0, .75);
+}
+
+button.calculatechances, select{
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    width: 50%;
+}
+
+section>h2{
+    alignment: center;
+}
+
+a{
+    text-decoration: none;
+}

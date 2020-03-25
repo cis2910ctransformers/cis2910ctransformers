@@ -58,6 +58,19 @@
         ev.preventDefault();
         var data = ev.dataTransfer.getData("text");
         ev.target.appendChild(document.getElementById(data));
+        if(data == "html"){
+            var node = document.createElement("LI");                 // Create a <li> node
+            var textnode = document.createTextNode("true");         // Create a text node
+            node.appendChild(textnode);                              // Append the text to <li>
+            document.getElementById(data).appendChild(node);
+            document.getElementById("bdanswer").style.backgroundColor="green";
+        }else{
+            var node = document.createElement("LI");                 // Create a <li> node
+            var textnode = document.createTextNode("false");         // Create a text node
+            node.appendChild(textnode);                              // Append the text to <li>
+            document.getElementById(data).appendChild(node);
+            document.getElementById("bdanswer").style.backgroundColor="red";
+        }
     }
 </script>
 
