@@ -9,7 +9,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
   <link rel="stylesheet" href="../styles/style-history.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="../js/scroll.js"></script>
+  <script src="../js/smooth-scroll.min.js"></script>
+  <script>
+      smoothScroll.init({
+      selector: '[data-scroll]',
+      selectorHeader: null, 
+      speed: 5000, 
+      easing: 'easeInOutCubic', 
+      offset: 0, 
+      callback: function ( anchor, toggle ) {} 
+      });
+  </script>
 </head>
 
 <body>
@@ -62,51 +72,38 @@
           <h3>Timeline</h3>
         </div>
       </div>
-      <div class="row">
+      <div class="row text-center">
         <div class="col-sm-12 col-lg-12 col-md-12">
           <div class="size-h">
             <ul class="timelineh timeline-horizontal">
               <li class="timeline-item">
-                <a href="#1960">
+                <a data-scroll href="#1960">
                   <div class="timeline-badge primary">1960s</div>
                 </a>
               </li>
               <li class="timeline-item">
-                <a href="#1970">
+                <a data-scroll href="#1970">
                   <div class="timeline-badge success">1970s</div>
                 </a>
               </li>
               <li class="timeline-item">
-                <a href="#1726">
+                <a data-scroll href="#1980">
                   <div class="timeline-badge info">1980s</div>
                 </a>
               </li>
               <li class="timeline-item">
-                <a href="#1736">
+                <a data-scroll href="#1990">
                   <div class="timeline-badge danger">1990s</div>
                 </a>
               </li>
               <li class="timeline-item">
-                <a href="#1736">
+                <a data-scroll href="#2000">
                   <div class="timeline-badge warning">2000s</div>
                 </a>
               </li>
               <li class="timeline-item">
-                <div class="timeline-badge"></div>
-              </li>
-              <li class="timeline-item">
-                <a href="#1666">
-                  <div class="timeline-badge success">1666</div>
-                </a>
-              </li>
-              <li class="timeline-item">
-                <a href="#1726">
-                  <div class="timeline-badge info">1726</div>
-                </a>
-              </li>
-              <li class="timeline-item">
-                <a href="#1736">
-                  <div class="timeline-badge danger"></div>
+                <a data-scroll href="#2010">
+                  <div class="timeline-badge">2010s</div>
                 </a>
               </li>
             </ul>
@@ -133,71 +130,396 @@
             </div>
           </div>
         </div>
+        <div id="1961"></div>
+        <div class="containerTime right">
+          <div class="content">
+            <h2>1961</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top" src="../images/1961.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">The first industrial robot, Unimate, starts working on an assembly line in a General Motors plant in New Jersey.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="1966"></div>
+        <div class="containerTime right">
+          <div class="content">
+            <h2>1966</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top" src="../images/1966.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Shakey the robot is the first general-purpose mobile robot to be able to reason about its own actions. In a Life magazine 1970 article about this “first electronic person,” Marvin Minsky is quoted saying with “certitude”: “In from three to eight years we will have a machine with the general intelligence of an average human being.”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="1968"></div>
+        <div class="containerTime right">
+          <div class="content">
+            <h2>1968</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top" src="../images/1968.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">The film 2001: Space Odyssey is released, featuring Hal, a sentient computer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div id="1970"></div>
-        <div class="containerTime right">
-          <div class="content">
-            <h2>1970's</h2>
-            <div class="card">
-              <div class="imgcenter">
-                <img class="card-img-top" src="../images/1970.jpg" alt="...">
-              </div>
-              <div class="card-body">
-                <p class="card-text">The WABOT-1 was the first fun-scale anthropomorphic robot developed in the world.
-                  It consisted of a limb-control system, a vision system and a conversation system. The WABOT-1 was able
-                  to communicate-with a person in Japanese and to measure distances and directions to the objects using
-                  external receptors, artificial ears and eyes, and an artificial mouth.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="1726"></div>
         <div class="containerTime left">
           <div class="content">
-            <h2>1726</h2>
+            <h2>1970s</h2>
             <div class="card">
               <div class="imgcenter">
-                <img class="card-img-top imgcenter" src="../images/1726.png" alt="...">
+                <img class="card-img-top imgcenter" src="../images/1970.jpg" alt="...">
               </div>
               <div class="card-body">
-                <p class="card-text">Jonathan Swift publishes Gulliver's Travels, which includes a description of the
-                  Engine, a machine on the island of Laputa (and a parody of Llull's ideas): "a Project for improving
-                  speculative Knowledge by practical and mechanical Operations." By using this "Contrivance," "the most
-                  ignorant Person at a reasonable Charge, and with a little bodily Labour, may write Books in
-                  Philosophy, Poetry, Politicks, Law, Mathematics, and Theology, with the least Assistance from Genius
-                  or study."</p>
+                <p class="card-text">The first anthropomorphic robot, the WABOT-1, is built at Waseda University in Japan. It consisted of a limb-control system, a vision system and a conversation system.</p>
               </div>
             </div>
           </div>
         </div>
-        <div id="1736"></div>
+        <div id="1972"></div>
         <div class="containerTime right">
           <div class="content">
-            <h2>1736</h2>
+            <h2>1972</h2>
             <div class="card">
               <div class="imgcenter">
-                <img class="card-img-top imgcenter" src="../images/1736.png" alt="...">
+                <img class="card-img-top imgcenter" src="../images/1972.jpg" alt="...">
               </div>
               <div class="card-body">
-                <p class="card-text">Thomas Bayes develops a framework for reasoning about the probability of events.
-                  Bayesian inference will become a leading approach in machine learning.</p>
+                <p class="card-text">MYCIN, an early expert system for identifying bacteria causing severe infections and recommending antibiotics, is developed at Stanford University.</p>
               </div>
             </div>
           </div>
         </div>
+        <div id="1973"></div>
+        <div class="containerTime right">
+          <div class="content">
+            <h2>1973</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/1973.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">James Lighthill reports to the British Science Research Council on the state artificial intelligence research, concluding that "in no part of the field have discoveries made so far produced the major impact that was then promised," leading to drastically reduced government support for AI research.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="1976"></div>
+        <div class="containerTime right">
+          <div class="content">
+            <h2>1976</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/1976.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Computer scientist Raj Reddy publishes “Speech Recognition by Machine: A Review” in the Proceedings of the IEEE, summarizing the early work on Natural Language Processing (NLP).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="1979"></div>
+        <div class="containerTime right">
+          <div class="content">
+            <h2>1979</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/1979.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">The Stanford Cart successfully crosses a chair-filled room without human intervention in about five hours, becoming one of the earliest examples of an autonomous vehicle.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="1980"></div>
         <div class="containerTime left">
+          <div class="content">
+            <h2>1980s</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/1980.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Wabot-2 is built at Waseda University in Japan, a musician humanoid robot able to communicate with a person, read a musical score and play tunes of average difficulty on an electronic organ.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="1984"></div>
+        <div class="containerTime right">
+          <div class="content">
+            <h2>1984</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/1984.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Electric Dreams is released, a film about a love triangle between a man, a woman and a personal computer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="1986"></div>
+        <div class="containerTime right">
+          <div class="content">
+            <h2>1986</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/1986.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">First driverless car, a Mercedes-Benz van equipped with cameras and sensors, built at Bundeswehr University in Munich under the direction of Ernst Dickmanns, drives up to 55 mph on empty streets.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="1988"></div>
+        <div class="containerTime right">
+          <div class="content">
+            <h2>1988</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/1988.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Rollo Carpenter develops the chat-bot Jabberwacky to "simulate natural human chat in an interesting, entertaining and humorous manner." It is an early attempt at creating artificial intelligence through human interaction.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="1990"></div>
+        <div class="containerTime left">
+          <div class="content">
+            <h2>1990s</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/1990.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Rodney Brooks publishes “Elephants Don’t Play Chess,” proposing a new approach to AI—building intelligent systems, specifically robots, from the ground up and on the basis of ongoing physical interaction with the environment: “The world is its own best model… The trick is to sense it appropriately and often enough.”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="1995"></div>
+        <div class="containerTime right">
+          <div class="content">
+            <h2>1995</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/1995.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Richard Wallace develops the chatbot A.L.I.C.E (Artificial Linguistic Internet Computer Entity), inspired by Joseph Weizenbaum's ELIZA program, but with the addition of natural language sample data collection on an unprecedented scale, enabled by the advent of the Web.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="1997"></div>
+        <div class="containerTime right">
+          <div class="content">
+            <h2>1997</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/1997.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Deep Blue becomes the first computer chess-playing program to beat a reigning world chess champion.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="1998"></div>
+        <div class="containerTime right">
+          <div class="content">
+            <h2>1998</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/1998.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Dave Hampton and Caleb Chung create Furby, the first domestic or pet robot.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="1999"></div>
+        <div class="containerTime right">
+          <div class="content">
+            <h2>1999</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/1999.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">AIBO Sony launches first consumer robot pet dog AiBO (AI robot) with skills and personality that develop over time</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="2000"></div>
+        <div class="containerTime left">
+          <div class="content">
+            <h2>2000s</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/2000.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">MIT’s Cynthia Breazeal develops Kismet, a robot that could recognize and simulate emotions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="2001"></div>
+        <div class="containerTime right">
+          <div class="content">
+            <h2>2001</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/2001.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">A.I. Artificial Intelligence is released, a Steven Spielberg film about David, a childlike android uniquely programmed with the ability to love.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="2002"></div>
+        <div class="containerTime right">
+          <div class="content">
+            <h2>2002</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/2002.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">ROOMBA First mass produced autonomous robotic vacuum cleaner from iRobot learns to navigate and clean homes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="2004"></div>
+        <div class="containerTime right">
+          <div class="content">
+            <h2>2004</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/2004.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">The first DARPA Grand Challenge, a prize competition for autonomous vehicles, is held in the Mojave Desert. None of the autonomous vehicles finished the 150-mile route.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="2009"></div>
+        <div class="containerTime right">
+          <div class="content">
+            <h2>2009</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/2009.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Google starts developing, in secret, a driverless car. In 2014, it became the first to pass, in Nevada, a U.S. state self-driving test.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="2010"></div>
+        <div class="containerTime left">
+          <div class="content">
+            <h2>2010s</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/2010.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Microsoft launched Kinect for Xbox 360, the first gaming device to track human body movement, using just a 3D camera and infra-red detection, enabling users to play their Xbox 360 wirelessly. The award-winning machine learning for human motion capture technology for this device was developed by the Computer Vision group at Microsoft Research, Cambridge.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="2011"></div>
+        <div class="containerTime right">
           <div class="content">
             <h2>2011</h2>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim
-              fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea
-              eam.</p>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/2011.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Apple announces voice activated Siri. A smartphone app that uses natural language to answer questions, make recommendations and perform actions.</p>
+              </div>
+            </div>
           </div>
         </div>
+        <div id="2014"></div>
         <div class="containerTime right">
           <div class="content">
-            <h2>2007</h2>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim
-              fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea
-              eam.</p>
+            <h2>2014</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/2014.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Alexa is a voice associated with the Amazon Echo that will respond to questions and requests through artificial intelligence.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="2015"></div>
+        <div class="containerTime right">
+          <div class="content">
+            <h2>2015</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/2015.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Google DeepMind's AlphaGo defeated Lee Sedol 4–1. Lee Sedol is a 9 dan professional Korean Go champion who won 27 major tournaments from 2002 to 2016. Before the match with AlphaGo, Lee Sedol was confident in predicting an easy 5–0 or 4–1 victory.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="2016"></div>
+        <div class="containerTime right">
+          <div class="content">
+            <h2>2016</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/2016.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">The United States Special Operations Command put forward the idea of the TALOS (Tactical Asault Light Operator Suit), a robotic exoskeleton to augment the soldier’s senses.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="2018"></div>
+        <div class="containerTime right">
+          <div class="content">
+            <h2>2018</h2>
+            <div class="card">
+              <div class="imgcenter">
+                <img class="card-img-top imgcenter" src="../images/2018.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text">Erica, a Robot becomes a news anchor in Japan.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -217,7 +539,7 @@
       </div>
     </div>
   </footer>
-  <a id="scrollTop" title="Back to top" href="#"></a>
+  <a data-scroll id="scrollTop" title="Back to top" href="#topscroll"></a>
 </body>
 
 </html>
