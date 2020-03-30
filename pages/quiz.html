@@ -7,9 +7,9 @@
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
     <title>Quiz</title>
     <style>
-        #bdquestions li {
+        .questions li {
             position: relative;
-            width: 20%;
+            width: 40%;
             z-index: 9;
             background-color: #f1f1f1;
             border: 1px solid #d3d3d3;
@@ -17,7 +17,7 @@
             text-align: center;
         }
 
-        #bdanswer {
+        .answer {
             padding: 10px;
             cursor: move;
             z-index: 10;
@@ -33,14 +33,34 @@
     <section>
         <h2>Question 1:</h2>
         <p>What is the language used in Big Data?</p>
-        <ol id="bdquestions">
+        <ol id="bdquestions" class="questions">
             <li draggable="true" ondragstart="dragStart(event)" id="html">HTML</li>
             <li draggable="true" ondragstart="dragStart(event)"id="python">Python</li>
             <li draggable="true" ondragstart="dragStart(event)"id="ruby">Ruby</li>
             <li draggable="true" ondragstart="dragStart(event)"id="pascal">Pascal</li>
         </ol>
         <br/>
-        <p id="bdanswer" ondrop="dragDrop(event)" ondragover="allowDrop(event)">Please drag your answer here</p>
+        <p id="bdanswer" class="answer" ondrop="dragDropBD(event)" ondragover="allowDrop(event)">Please drag your answer here</p>
+        <h2>Question 2:</h2>
+        <p>What is the future of machine learning</p>
+        <ol id="mlquestions" class="questions">
+            <li draggable="true" ondragstart="dragStart(event)" id="scanning">Scanning human faces at the mall and offering deals based on purchase history</li>
+            <li draggable="true" ondragstart="dragStart(event)"id="microchips">Putting microchips in side of humans for faster access to places</li>
+            <li draggable="true" ondragstart="dragStart(event)"id="nfc">Using NFC on phones as payments when checkous out</li>
+            <li draggable="true" ondragstart="dragStart(event)"id="airplanes">Airplanes alerting when you closer to the ground</li>
+        </ol>
+        <br/>
+        <p id="mlanswer" class="answer"ondrop="dragDropML(event)" ondragover="allowDrop(event)">Please drag your answer here</p>
+        <h2>Question 3:</h2>
+        <p>What year was the first anthropomorphic robot built </p>
+        <ol id="hquestions" class="questions">
+            <li draggable="true" ondragstart="dragStart(event)" id="1972">1972</li>
+            <li draggable="true" ondragstart="dragStart(event)"id="1962">1962</li>
+            <li draggable="true" ondragstart="dragStart(event)"id="1970">1970</li>
+            <li draggable="true" ondragstart="dragStart(event)"id="q997">1997</li>
+        </ol>
+        <br/>
+        <p id="hanswer" class="answer" ondrop="dragDropHistory(event)" ondragover="allowDrop(event)">Please drag your answer here</p>
     </section>
 </main>
 <footer>
@@ -54,22 +74,58 @@
         ev.dataTransfer.setData("text", ev.target.id)
     }
 
-    function dragDrop(ev){
+    function dragDropBD(ev){
         ev.preventDefault();
         var data = ev.dataTransfer.getData("text");
         ev.target.appendChild(document.getElementById(data));
         if(data == "html"){
-            var node = document.createElement("LI");                 // Create a <li> node
+            var node = document.createElement("div");                 // Create a <li> node
             var textnode = document.createTextNode("true");         // Create a text node
             node.appendChild(textnode);                              // Append the text to <li>
             document.getElementById(data).appendChild(node);
             document.getElementById("bdanswer").style.backgroundColor="green";
         }else{
-            var node = document.createElement("LI");                 // Create a <li> node
+            var node = document.createElement("div");                 // Create a <li> node
             var textnode = document.createTextNode("false");         // Create a text node
             node.appendChild(textnode);                              // Append the text to <li>
             document.getElementById(data).appendChild(node);
             document.getElementById("bdanswer").style.backgroundColor="red";
+        }
+    }
+    function dragDropHistory(ev){
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+        if(data == "1962"){
+            var node = document.createElement("div");                 // Create a <li> node
+            var textnode = document.createTextNode("true");         // Create a text node
+            node.appendChild(textnode);                              // Append the text to <li>
+            document.getElementById(data).appendChild(node);
+            document.getElementById("hanswer").style.backgroundColor="green";
+        }else{
+            var node = document.createElement("div");                 // Create a <li> node
+            var textnode = document.createTextNode("false");         // Create a text node
+            node.appendChild(textnode);                              // Append the text to <li>
+            document.getElementById(data).appendChild(node);
+            document.getElementById("hanswer").style.backgroundColor="red";
+        }
+    }
+    function dragDropML(ev){
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+        if(data == "scanning"){
+            var node = document.createElement("div");                 // Create a <li> node
+            var textnode = document.createTextNode("true");         // Create a text node
+            node.appendChild(textnode);                              // Append the text to <li>
+            document.getElementById(data).appendChild(node);
+            document.getElementById("mlanswer").style.backgroundColor="green";
+        }else{
+            var node = document.createElement("div");                 // Create a <li> node
+            var textnode = document.createTextNode("false");         // Create a text node
+            node.appendChild(textnode);                              // Append the text to <li>
+            document.getElementById(data).appendChild(node);
+            document.getElementById("mlanswer").style.backgroundColor="red";
         }
     }
 </script>
