@@ -6,129 +6,165 @@
     <script src="../js/dragAndDrop.js"></script>
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
     <title>Quiz</title>
-    <style>
-        .questions li {
-            position: relative;
-            width: 40%;
-            z-index: 9;
-            background-color: #f1f1f1;
-            border: 1px solid #d3d3d3;
-            margin:10px;
-            text-align: center;
-        }
-
-        .answer {
-            padding: 10px;
-            cursor: move;
-            z-index: 10;
-            background-color:lightblue;
-            color: #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
+<style>
+    .questions li {
+        position: relative;
+        width: 40%;
+        z-index: 9;
+        background-color: #f1f1f1;
+        border: 1px solid #d3d3d3;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .answer {
+        padding: 10px;
+        cursor: move;
+        z-index: 10;
+        background-color: lightblue;
+        color: #fff;
+    }
+</style>
 
 <body>
-<main>
-    <h1>Now let's take a quiz</h1>
-    <section>
-        <h2>Question 1:</h2>
-        <p>What is the language used in Big Data?</p>
-        <ol id="bdquestions" class="questions">
-            <li draggable="true" ondragstart="dragStart(event)" id="html">HTML</li>
-            <li draggable="true" ondragstart="dragStart(event)"id="python">Python</li>
-            <li draggable="true" ondragstart="dragStart(event)"id="ruby">Ruby</li>
-            <li draggable="true" ondragstart="dragStart(event)"id="pascal">Pascal</li>
-        </ol>
-        <br/>
-        <p id="bdanswer" class="answer" ondrop="dragDropBD(event)" ondragover="allowDrop(event)">Please drag your answer here</p>
-        <h2>Question 2:</h2>
-        <p>What is the future of machine learning</p>
-        <ol id="mlquestions" class="questions">
-            <li draggable="true" ondragstart="dragStart(event)" id="scanning">Scanning human faces at the mall and offering deals based on purchase history</li>
-            <li draggable="true" ondragstart="dragStart(event)"id="microchips">Putting microchips in side of humans for faster access to places</li>
-            <li draggable="true" ondragstart="dragStart(event)"id="nfc">Using NFC on phones as payments when checkous out</li>
-            <li draggable="true" ondragstart="dragStart(event)"id="airplanes">Airplanes alerting when you closer to the ground</li>
-        </ol>
-        <br/>
-        <p id="mlanswer" class="answer"ondrop="dragDropML(event)" ondragover="allowDrop(event)">Please drag your answer here</p>
-        <h2>Question 3:</h2>
-        <p>What year was the first anthropomorphic robot built </p>
-        <ol id="hquestions" class="questions">
-            <li draggable="true" ondragstart="dragStart(event)" id="1972">1972</li>
-            <li draggable="true" ondragstart="dragStart(event)"id="1962">1962</li>
-            <li draggable="true" ondragstart="dragStart(event)"id="1970">1970</li>
-            <li draggable="true" ondragstart="dragStart(event)"id="q997">1997</li>
-        </ol>
-        <br/>
-        <p id="hanswer" class="answer" ondrop="dragDropHistory(event)" ondragover="allowDrop(event)">Please drag your answer here</p>
-    </section>
-</main>
-<footer>
+    <main>
+        <div class="jumbotron">
+            <p class="lead">
+                <a class="btn btn-primary btn-lg learn-more" href="big-data.html" role="button">← Return to Big Data</a>
+            </p>
+            <h1 class="display-4">Now Let's Take A Quiz!</h1>
+        </div>
 
-</footer>
-<script>
-    function allowDrop(ev){
-        ev.preventDefault();
-    }
-    function dragStart(ev){
-        ev.dataTransfer.setData("text", ev.target.id)
-    }
+        <section>
+            <div class="container">
+                <h2>Question 1:</h2>
+                <p>What is the language used in Big Data?</p>
+                <ol id="bdquestions" class="questions">
+                    <li draggable="true" ondragstart="dragStart(event)" id="html">HTML</li>
+                    <li draggable="true" ondragstart="dragStart(event)" id="python">Python</li>
+                    <li draggable="true" ondragstart="dragStart(event)" id="ruby">Ruby</li>
+                    <li draggable="true" ondragstart="dragStart(event)" id="pascal">Pascal</li>
+                </ol>
+                <br />
+                <p id="bdanswer" class="answer" ondrop="dragDropBD(event)" ondragover="allowDrop(event)">Please drag
+                    your
+                    answer here</p>
+            </div>
 
-    function dragDropBD(ev){
-        ev.preventDefault();
-        var data = ev.dataTransfer.getData("text");
-        ev.target.appendChild(document.getElementById(data));
-        if(data == "html"){
-            var node = document.createElement("div");                 // Create a <li> node
-            var textnode = document.createTextNode("true");         // Create a text node
-            node.appendChild(textnode);                              // Append the text to <li>
-            document.getElementById(data).appendChild(node);
-            document.getElementById("bdanswer").style.backgroundColor="green";
-        }else{
-            var node = document.createElement("div");                 // Create a <li> node
-            var textnode = document.createTextNode("false");         // Create a text node
-            node.appendChild(textnode);                              // Append the text to <li>
-            document.getElementById(data).appendChild(node);
-            document.getElementById("bdanswer").style.backgroundColor="red";
+            <div class="container">
+                <h2>Question 2:</h2>
+                <p>What is the future of machine learning</p>
+                <ol id="mlquestions" class="questions">
+                    <li draggable="true" ondragstart="dragStart(event)" id="scanning">Scanning human faces at the mall
+                        and
+                        offering deals based on purchase history</li>
+                    <li draggable="true" ondragstart="dragStart(event)" id="microchips">Putting microchips in side of
+                        humans
+                        for faster access to places</li>
+                    <li draggable="true" ondragstart="dragStart(event)" id="nfc">Using NFC on phones as payments when
+                        checkous out</li>
+                    <li draggable="true" ondragstart="dragStart(event)" id="airplanes">Airplanes alerting when you
+                        closer to
+                        the ground</li>
+                </ol>
+                <br />
+                <p id="mlanswer" class="answer" ondrop="dragDropML(event)" ondragover="allowDrop(event)">Please drag
+                    your
+                    answer here</p>
+            </div>
+
+            <div class="container">
+                <h2>Question 3:</h2>
+                <p>What year was the first anthropomorphic robot built </p>
+                <ol id="hquestions" class="questions">
+                    <li draggable="true" ondragstart="dragStart(event)" id="1972">1972</li>
+                    <li draggable="true" ondragstart="dragStart(event)" id="1962">1962</li>
+                    <li draggable="true" ondragstart="dragStart(event)" id="1970">1970</li>
+                    <li draggable="true" ondragstart="dragStart(event)" id="q997">1997</li>
+                </ol>
+                <br />
+                <p id="hanswer" class="answer" ondrop="dragDropHistory(event)" ondragover="allowDrop(event)">Please drag
+                    your answer here</p>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
         }
-    }
-    function dragDropHistory(ev){
-        ev.preventDefault();
-        var data = ev.dataTransfer.getData("text");
-        ev.target.appendChild(document.getElementById(data));
-        if(data == "1962"){
-            var node = document.createElement("div");                 // Create a <li> node
-            var textnode = document.createTextNode("true");         // Create a text node
-            node.appendChild(textnode);                              // Append the text to <li>
-            document.getElementById(data).appendChild(node);
-            document.getElementById("hanswer").style.backgroundColor="green";
-        }else{
-            var node = document.createElement("div");                 // Create a <li> node
-            var textnode = document.createTextNode("false");         // Create a text node
-            node.appendChild(textnode);                              // Append the text to <li>
-            document.getElementById(data).appendChild(node);
-            document.getElementById("hanswer").style.backgroundColor="red";
+
+        function dragStart(ev) {
+            ev.dataTransfer.setData("text", ev.target.id)
         }
-    }
-    function dragDropML(ev){
-        ev.preventDefault();
-        var data = ev.dataTransfer.getData("text");
-        ev.target.appendChild(document.getElementById(data));
-        if(data == "scanning"){
-            var node = document.createElement("div");                 // Create a <li> node
-            var textnode = document.createTextNode("true");         // Create a text node
-            node.appendChild(textnode);                              // Append the text to <li>
-            document.getElementById(data).appendChild(node);
-            document.getElementById("mlanswer").style.backgroundColor="green";
-        }else{
-            var node = document.createElement("div");                 // Create a <li> node
-            var textnode = document.createTextNode("false");         // Create a text node
-            node.appendChild(textnode);                              // Append the text to <li>
-            document.getElementById(data).appendChild(node);
-            document.getElementById("mlanswer").style.backgroundColor="red";
+
+        function dragDropBD(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+            if (data == "html") {
+                var node = document.createElement("div"); // Create a <li> node
+                var textnode = document.createTextNode("true"); // Create a text node
+                node.appendChild(textnode); // Append the text to <li>
+                document.getElementById(data).appendChild(node);
+                document.getElementById("bdanswer").style.backgroundColor = "green";
+            } else {
+                var node = document.createElement("div"); // Create a <li> node
+                var textnode = document.createTextNode("false"); // Create a text node
+                node.appendChild(textnode); // Append the text to <li>
+                document.getElementById(data).appendChild(node);
+                document.getElementById("bdanswer").style.backgroundColor = "red";
+            }
         }
-    }
-</script>
+
+        function dragDropHistory(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+            if (data == "1962") {
+                var node = document.createElement("div"); // Create a <li> node
+                var textnode = document.createTextNode("true"); // Create a text node
+                node.appendChild(textnode); // Append the text to <li>
+                document.getElementById(data).appendChild(node);
+                document.getElementById("hanswer").style.backgroundColor = "green";
+            } else {
+                var node = document.createElement("div"); // Create a <li> node
+                var textnode = document.createTextNode("false"); // Create a text node
+                node.appendChild(textnode); // Append the text to <li>
+                document.getElementById(data).appendChild(node);
+                document.getElementById("hanswer").style.backgroundColor = "red";
+            }
+        }
+
+        function dragDropML(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+            if (data == "scanning") {
+                var node = document.createElement("div"); // Create a <li> node
+                var textnode = document.createTextNode("true"); // Create a text node
+                node.appendChild(textnode); // Append the text to <li>
+                document.getElementById(data).appendChild(node);
+                document.getElementById("mlanswer").style.backgroundColor = "green";
+            } else {
+                var node = document.createElement("div"); // Create a <li> node
+                var textnode = document.createTextNode("false"); // Create a text node
+                node.appendChild(textnode); // Append the text to <li>
+                document.getElementById(data).appendChild(node);
+                document.getElementById("mlanswer").style.backgroundColor = "red";
+            }
+        }
+    </script>
 
 </body>
+
 </html>

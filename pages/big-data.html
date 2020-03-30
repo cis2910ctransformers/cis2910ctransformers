@@ -16,9 +16,9 @@
     <link rel="stylesheet" type="text/css" href="../styles/big-data.css">
     <script src="../js/particles.js"></script>
     <script>
-    particlesJS.load('particles-js', '../js/particles.json', function () {
-    console.log('callback - particles.js config loaded');
-    });
+        particlesJS.load('particles-js', '../js/particles.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
     </script>
     <style>
         #particles-js {
@@ -29,7 +29,10 @@
             top: 0;
             left: 0;
         }
-        img {vertical-align: middle;}
+
+        img {
+            vertical-align: middle;
+        }
 
         /* Slideshow container */
         .slideshow-container {
@@ -39,7 +42,8 @@
         }
 
         /* Next & previous buttons */
-        .prev, .next {
+        .prev,
+        .next {
             cursor: pointer;
             position: absolute;
             top: 50%;
@@ -61,8 +65,9 @@
         }
 
         /* On hover, add a black background color with a little bit see-through */
-        .prev:hover, .next:hover {
-            background-color: rgba(0,0,0,0.8);
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
         }
 
         /* Caption text */
@@ -111,18 +116,33 @@
 
 
         @-webkit-keyframes fade {
-            from {opacity: .4}
-            to {opacity: 1}
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
         }
 
         @keyframes fade {
-            from {opacity: .4}
-            to {opacity: 1}
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
         }
 
         /* On smaller screens, decrease text size */
         @media only screen and (max-width: 300px) {
-            .prev, .next,.text {font-size: 11px}
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
         }
 
         header>img {
@@ -130,7 +150,7 @@
             height: 250px;
         }
 
-        .slideshow-container>div>img{
+        .slideshow-container>div>img {
             width: 100px;
             height: 500px;
         }
@@ -180,279 +200,284 @@
     <section class="container" id="whatisbd">
         <h1 class="display-6">What is Big Data?</h1>
         <p>
-        <dfn id="bddef"><strong><em>Big Data</em></strong></dfn> is a field that treats ways to analyze,
-        systematically extract information from, or otherwise deal with data sets that are too large or complex
-        to be dealt with by traditional data-processing application software. Data with many cases (rows) offer
-        greater statistical power, while data with higher complexity (more attributes or columns)
-        may lead to a higher false discovery rat<a href="https://en.wikipedia.org/wiki/Big_data" rel="noreferrer"
-            target="_blank">&#8599;</a><sup>1</sup></p>
+            <dfn id="bddef"><strong><em>Big Data</em></strong></dfn> is a field that treats ways to analyze,
+            systematically extract information from, or otherwise deal with data sets that are too large or complex
+            to be dealt with by traditional data-processing application software. Data with many cases (rows) offer
+            greater statistical power, while data with higher complexity (more attributes or columns)
+            may lead to a higher false discovery rat<a href="https://en.wikipedia.org/wiki/Big_data" rel="noreferrer"
+                target="_blank">&#8599;</a><sup>1</sup></p>
     </section>
-        <section class="container" id="bd_history">
-            <h1 class="display-6">Big Data History</h1>
-            <div class="slideshow-container">
+    <section class="container" id="bd_history">
+        <h1 class="display-6">Big Data History</h1>
+        <div class="slideshow-container">
 
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
-                    <img src="../images/bdh_03.jpg" style="width:100%">
-                    <div class="text">Data analysis, data analytics and Big Data originate from the longstanding domain of database management. It relies heavily on the storage, extraction, and optimization techniques that are common in data that is stored in Relational Database Management Systems (RDBMS)</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
-                    <img src="../images/bdh_02.png" style="width:100%">
-                    <div class="text">Since the early 2000s, the Internet and the Web began to offer unique data collections and data analysis opportunities. With the expansion of web traffic and online stores, companies such as Yahoo, Amazon and eBay started to analyze customer behavior by analyzing click-rates, IP-specific location data and search logs. This opened a whole new world of possibilities.</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
-                    <img src="../images/bdh_01.png" style="width:100%">
-                    <div class="text">Although web-based unstructured content is still the main focus for many organizations in data analysis, data analytics, and big data, the current possibilities to retrieve valuable information are emerging out of mobile devices</div>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            </div>
-            <br>
-
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="../images/bdh_03.jpg" style="width:100%">
+                <div class="text">Data analysis, data analytics and Big Data originate from the longstanding domain of
+                    database management. It relies heavily on the storage, extraction, and optimization techniques that
+                    are common in data that is stored in Relational Database Management Systems (RDBMS)</div>
             </div>
 
-
-        </section>
-        <section class="container" id="applicationofbd">
-            <h1 class="display-6">Application of Big Data</h1>
-            <p>This is a list of areas where <a href="#bddef" style="color: black">Big Data</a> is the most used:</p>
-            <ul>
-                <li>Reasoning</li>
-                <li>Automated learning and scheduling</li>
-                <li>Machine learning</li>
-                <li>Natural language processing</li>
-                <li>Computer vision</li>
-                <li>Robotics</li>
-                <li>General intelligence</li>
-            </ul>
-        </section>
-
-        <section class="container" id="how_bd_works">
-            <h1 class="display-6">How Does Big Data Work?</h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ps6HweFb5LI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
-
-        <section class="container" id="languagesusedinbd">
-            <h1 class="display-6">Languages used in Big Data:</h1>
-            <ul>
-                <li>
-                    <figure>
-                        <figcaption>
-                            Python
-                        </figcaption>
-                        <img src="../images/python_logo.jpg" height="50" width="70" alt="python">
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <figcaption>
-                            Java
-                        </figcaption>
-                        <img src="../images/java_logo.jpeg" height="50" width="70" alt="java">
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <figcaption>
-                            R
-                        </figcaption>
-                        <img src="../images/r_logo.jpeg" height="50" width="70" alt="r">
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <figcaption>
-                            SQL
-                        </figcaption>
-                        <img src="../images/sql_logo.jpeg" height="50" width="70" alt="sql">
-                    </figure>
-                </li>
-            </ul>
-        </section>
-
-        <section class="container">
-            <h1 id="examplesOfBD" class="display-6">Examples of Big Data Usage</h1>
-            <p>For example you have <dfn><abbr title="National Hockey League">NHL</abbr></dfn> Statistics. In this
-                example
-                we will take statistics for Tampa Bay Lightnings(<b><abbr title="Tampa Bay Lightning">TBA</abbr></b>)
-                and
-                Boston Bruins(<b><abbr title="Boston Bruins">BOS</abbr></b>) from 2018-2019 season split monthly</p>
-            <div>
-                <p><b>Tampa Bay Lightning</b> and <b>Boston Bruins</b> results season 2018-2019</p>
-                <table id="teamsrecords">
-                    <colgroup>
-                        <col>
-                        <col span="2" style="background-color: lightskyblue">
-                        <col span="2" style="background-color: yellow">
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <th rowspan="2">Team&rarr;<br />Month<br />&darr;</th>
-                            <th colspan="2">TBL</th>
-                            <th colspan="2">BOS</th>
-                        </tr>
-                        <tr>
-                            <th>W</th>
-                            <th>L</th>
-                            <th>W</th>
-                            <th>L</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>October</td>
-                            <td>8</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>6</td>
-                        </tr>
-                        <tr>
-                            <td>November</td>
-                            <td>8</td>
-                            <td>5</td>
-                            <td>7</td>
-                            <td>6</td>
-                        </tr>
-                        <tr>
-                            <td>December</td>
-                            <td>11</td>
-                            <td>2</td>
-                            <td>10</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>January</td>
-                            <td>6</td>
-                            <td>6</td>
-                            <td>8</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>February</td>
-                            <td>9</td>
-                            <td>4</td>
-                            <td>9</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>March</td>
-                            <td>9</td>
-                            <td>5</td>
-                            <td>11</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td>April</td>
-                            <td>7</td>
-                            <td>4</td>
-                            <td>6</td>
-                            <td>8</td>
-                        </tr>
-                        <tr>
-                            <td>Total</td>
-                            <td>58</td>
-                            <td>29</td>
-                            <td>55</td>
-                            <td>36</td>
-                        </tr>
-                </table>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="../images/bdh_02.png" style="width:100%">
+                <div class="text">Since the early 2000s, the Internet and the Web began to offer unique data collections
+                    and data analysis opportunities. With the expansion of web traffic and online stores, companies such
+                    as Yahoo, Amazon and eBay started to analyze customer behavior by analyzing click-rates, IP-specific
+                    location data and search logs. This opened a whole new world of possibilities.</div>
             </div>
-            <br>
-                <label for="chooseTeam">Choose a team</label>
-                <select id="chooseTeam" required>
-                    <option value="" style="display: none">select a team</option>
-                    <option value="tbl">TBL</option>
-                    <option value="bos">BOS</option>
-                </select>
-                <label for="chooseMonthDD">Choose a month</label>
-                <select id="chooseMonthDD" required>
-                    <option style="display: none" value="">select a month</option>
-                    <option value="oct">October</option>
-                    <option value="nov">November</option>
-                    <option value="dec">December</option>
-                    <option value="jan">January</option>
-                    <option value="feb">February</option>
-                    <option value="mar">March</option>
-                    <option value="apr">April</option>
-                </select>
-                <button type="button" style="margin-left: 50px" onclick="calculateProbability()" >Tell Me My Chances</button>
-            <br>
-                <span id="chancesOutput"></span>
-            <br>
-            <br>
-            </form>
-            <p>To calculate this value we need to follow these steps:</p>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="../images/bdh_01.png" style="width:100%">
+                <div class="text">Although web-based unstructured content is still the main focus for many organizations
+                    in data analysis, data analytics, and big data, the current possibilities to retrieve valuable
+                    information are emerging out of mobile devices</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+
+    </section>
+    <section class="container" id="applicationofbd">
+        <h1 class="display-6">Application of Big Data</h1>
+        <p>This is a list of areas where <a href="#bddef" style="color: black">Big Data</a> is the most used:</p>
+        <ul>
+            <li>Reasoning</li>
+            <li>Automated learning and scheduling</li>
+            <li>Machine learning</li>
+            <li>Natural language processing</li>
+            <li>Computer vision</li>
+            <li>Robotics</li>
+            <li>General intelligence</li>
+        </ul>
+    </section>
+
+    <section class="container" id="how_bd_works">
+        <h1 class="display-6">How Does Big Data Work?</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ps6HweFb5LI" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section class="container" id="languagesusedinbd">
+        <h1 class="display-6">Languages used in Big Data:</h1>
+        <ul>
+            <li>
+                <figure>
+                    <figcaption>
+                        Python
+                    </figcaption>
+                    <img src="../images/python_logo.jpg" height="50" width="70" alt="python">
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <figcaption>
+                        Java
+                    </figcaption>
+                    <img src="../images/java_logo.jpeg" height="50" width="70" alt="java">
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <figcaption>
+                        R
+                    </figcaption>
+                    <img src="../images/r_logo.jpeg" height="50" width="70" alt="r">
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <figcaption>
+                        SQL
+                    </figcaption>
+                    <img src="../images/sql_logo.jpeg" height="50" width="70" alt="sql">
+                </figure>
+            </li>
+        </ul>
+    </section>
+
+    <section class="container">
+        <h1 id="examplesOfBD" class="display-6">Examples of Big Data Usage</h1>
+        <p>For example you have <dfn><abbr title="National Hockey League">NHL</abbr></dfn> Statistics. In this
+            example
+            we will take statistics for Tampa Bay Lightnings(<b><abbr title="Tampa Bay Lightning">TBA</abbr></b>)
+            and
+            Boston Bruins(<b><abbr title="Boston Bruins">BOS</abbr></b>) from 2018-2019 season split monthly</p>
+        <div>
+            <p><b>Tampa Bay Lightning</b> and <b>Boston Bruins</b> results season 2018-2019</p>
+            <table id="teamsrecords">
+                <colgroup>
+                    <col>
+                    <col span="2" style="background-color: lightskyblue">
+                    <col span="2" style="background-color: yellow">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Team&rarr;<br />Month<br />&darr;</th>
+                        <th colspan="2">TBL</th>
+                        <th colspan="2">BOS</th>
+                    </tr>
+                    <tr>
+                        <th>W</th>
+                        <th>L</th>
+                        <th>W</th>
+                        <th>L</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>October</td>
+                        <td>8</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>November</td>
+                        <td>8</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>December</td>
+                        <td>11</td>
+                        <td>2</td>
+                        <td>10</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>January</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>8</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>February</td>
+                        <td>9</td>
+                        <td>4</td>
+                        <td>9</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>March</td>
+                        <td>9</td>
+                        <td>5</td>
+                        <td>11</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>April</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>58</td>
+                        <td>29</td>
+                        <td>55</td>
+                        <td>36</td>
+                    </tr>
+            </table>
+        </div>
+        <br>
+        <label for="chooseTeam">Choose a team</label>
+        <select id="chooseTeam" required>
+            <option value="" style="display: none">select a team</option>
+            <option value="tbl">TBL</option>
+            <option value="bos">BOS</option>
+        </select>
+        <label for="chooseMonthDD">Choose a month</label>
+        <select id="chooseMonthDD" required>
+            <option style="display: none" value="">select a month</option>
+            <option value="oct">October</option>
+            <option value="nov">November</option>
+            <option value="dec">December</option>
+            <option value="jan">January</option>
+            <option value="feb">February</option>
+            <option value="mar">March</option>
+            <option value="apr">April</option>
+        </select>
+        <button type="button" style="margin-left: 50px" onclick="calculateProbability()">Tell Me My Chances</button>
+        <br>
+        <span id="chancesOutput"></span>
+        <br>
+        <br>
+        </form>
+        <p>To calculate this value we need to follow these steps:</p>
+        <ol>
+            <li>calculate average mean<a href="https://www.mathsisfun.com/mean.html" rel="noreferrer"
+                    target="_blank">&#8599;</a><sup>2</sup></li>
+            <li>calculate standard deviation<a href="https://www.mathsisfun.com/data/standard-deviation-formulas.html"
+                    rel="noreferrer" target="_blank">&#8599;</a><sup>2</sup></li>
+            <li>subtract mean average from a data point</li>
+            <li>divide the number from step 3 by the number in step 2</li>
+            <li>use the z-score table to find your probability<a href="https://www.onlinemathlearning.com/z-score.html"
+                    rel="noreferrer" target="_blank">&#8599;</a><sup>3</sup></li>
+        </ol>
+        <p>Imagine you have hundred thousands of data like this. <a href="#bddef" style="color: black">Big Data</a>
+            analysis allows you to predict certain outcomes based on previous occurrences using statistical and
+            mathematical equations</p>
+    </section>
+
+    <section id="futureOfBD" class="container">
+        <h1 class="display-6">The Future of Big Data</h1>
+        <ul>
+            <li><b>Machine Learning will be the next big thing.</b> It will help businesses with preparing data and
+                conduction analysis.<a href="https://www.mathsisfun.com/mean.html" rel="noreferrer"
+                    target="_blank">&#8599;</a><sup>4</sup></li>
+            <li><b>Privacy will be a challenge.</b> The stakes of security will be higher due the increasing volumes
+                of
+                data. If there is not an efficient way to deal with this, the trend will fade very quickly.<a
+                    href="https://www.mathsisfun.com/mean.html" rel="noreferrer" target="_blank">&#8599;</a><sup>4</sup>
+            </li>
+            <li><b>Big Data Intelligent Apps.</b> Another way that enterprises are using machine learning and AI
+                technologies is to create intelligent apps<a
+                    href="https://www.datamation.com/big-data/big-data-trends.html" rel="noreferrer"
+                    target="_blank">&#8599;</a><sup>5</sup></li>
+            <li><b><abbr title="Internet Of Things">IoT</abbr>.</b> The Internet of Things is also likely to have a
+                sizable impact on big data<a href="https://www.datamation.com/big-data/big-data-trends.html"
+                    rel="noreferrer" target="_blank">&#8599;</a><sup>5</sup></li>
+            <li><b>BlockChain.</b> Blockchain will provide participants a high level of trust and security<a
+                    href="https://www.blockchain-council.org/blockchain/how-to-leverage-blockchain-for-making-machine-learning-models-more-accessible/"
+                    rel="noreferrer" target="_blank">&#8599;</a><sup>6</sup></li>
+            <li><b>Augmented reality.</b> the ever-growing complexity of neural networks means that AI programs of
+                the
+                future will be able to wow us with much more visually impressive renditions than current AR
+                initiatives
+                can produce<a
+                    href="https://www.blockchain-council.org/blockchain/how-to-leverage-blockchain-for-making-machine-learning-models-more-accessible/"
+                    rel="noreferrer" target="_blank">&#8599;</a><sup>7</sup></li>
+        </ul>
+        <div id="references">
             <ol>
-                <li>calculate average mean<a href="https://www.mathsisfun.com/mean.html" rel="noreferrer"
-                        target="_blank">&#8599;</a><sup>2</sup></li>
-                <li>calculate standard deviation<a
-                        href="https://www.mathsisfun.com/data/standard-deviation-formulas.html" rel="noreferrer"
-                        target="_blank">&#8599;</a><sup>2</sup></li>
-                <li>subtract mean average from a data point</li>
-                <li>divide the number from step 3 by the number in step 2</li>
-                <li>use the z-score table to find your probability<a
-                        href="https://www.onlinemathlearning.com/z-score.html" rel="noreferrer"
-                        target="_blank">&#8599;</a><sup>3</sup></li>
-            </ol>
-            <p>Imagine you have hundred thousands of data like this. <a href="#bddef" style="color: black">Big Data</a>
-                analysis allows you to predict certain outcomes based on previous occurrences using statistical and
-                mathematical equations</p>
-        </section>
-
-        <section id="futureOfBD" class="container">
-            <h1 class="display-6">The Future of Big Data</h1>
-            <ul>
-                <li><b>Machine Learning will be the next big thing.</b> It will help businesses with preparing data and
-                    conduction analysis.<a href="https://www.mathsisfun.com/mean.html" rel="noreferrer"
-                        target="_blank">&#8599;</a><sup>4</sup></li>
-                <li><b>Privacy will be a challenge.</b> The stakes of security will be higher due the increasing volumes
-                    of
-                    data. If there is not an efficient way to deal with this, the trend will fade very quickly.<a
-                        href="https://www.mathsisfun.com/mean.html" rel="noreferrer"
-                        target="_blank">&#8599;</a><sup>4</sup>
+                <li><cite>https://en.wikipedia.org/wiki/Big_data</cite></li>
+                <li><cite>https://www.mathsisfun.com</cite></li>
+                <li><cite>https://www.onlinemathlearning.com/</cite></li>
+                <li><cite>https://www.agiliacenter.com/predictions-future-big-data-2/?lang=en</cite></li>
+                <li><cite>https://www.datamation.com/big-data/big-data-trends.html</cite></li>
+                <li><cite>https://www.blockchain-council.org/blockchain/how-to-leverage-blockchain-for-making-machine-learning-models-more-accessible/</cite>
                 </li>
-                <li><b>Big Data Intelligent Apps.</b> Another way that enterprises are using machine learning and AI
-                    technologies is to create intelligent apps<a
-                        href="https://www.datamation.com/big-data/big-data-trends.html" rel="noreferrer"
-                        target="_blank">&#8599;</a><sup>5</sup></li>
-                <li><b><abbr title="Internet Of Things">IoT</abbr>.</b> The Internet of Things is also likely to have a
-                    sizable impact on big data<a href="https://www.datamation.com/big-data/big-data-trends.html"
-                        rel="noreferrer" target="_blank">&#8599;</a><sup>5</sup></li>
-                <li><b>BlockChain.</b> Blockchain will provide participants a high level of trust and security<a
-                        href="https://www.blockchain-council.org/blockchain/how-to-leverage-blockchain-for-making-machine-learning-models-more-accessible/"
-                        rel="noreferrer" target="_blank">&#8599;</a><sup>6</sup></li>
-                <li><b>Augmented reality.</b> the ever-growing complexity of neural networks means that AI programs of
-                    the
-                    future will be able to wow us with much more visually impressive renditions than current AR
-                    initiatives
-                    can produce<a
-                        href="https://www.blockchain-council.org/blockchain/how-to-leverage-blockchain-for-making-machine-learning-models-more-accessible/"
-                        rel="noreferrer" target="_blank">&#8599;</a><sup>7</sup></li>
-            </ul>
-            <div id="references">
-                <ol>
-                    <li><cite>https://en.wikipedia.org/wiki/Big_data</cite></li>
-                    <li><cite>https://www.mathsisfun.com</cite></li>
-                    <li><cite>https://www.onlinemathlearning.com/</cite></li>
-                    <li><cite>https://www.agiliacenter.com/predictions-future-big-data-2/?lang=en</cite></li>
-                    <li><cite>https://www.datamation.com/big-data/big-data-trends.html</cite></li>
-                    <li><cite>https://www.blockchain-council.org/blockchain/how-to-leverage-blockchain-for-making-machine-learning-models-more-accessible/</cite>
-                    </li>
-                    <li><cite>https://www.smartdatacollective.com/how-big-data-is-transforming-augmented-reality/</cite>
-                    </li>
-                </ol>
-            </div>
-        </section>
+                <li><cite>https://www.smartdatacollective.com/how-big-data-is-transforming-augmented-reality/</cite>
+                </li>
+            </ol>
+        </div>
+    </section>
 
     <footer>
         <div class="container-fluid">
@@ -481,42 +506,47 @@
             var i;
             var slides = document.getElementsByClassName("mySlides");
             var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
             for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
             }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
         }
-        
+
         function calculateProbability() {
             var percentage;
             var team = document.getElementById("chooseTeam").value;
             var month = document.getElementById("chooseMonthDD").value;
-            if(team == "tbl"){
-                if(month == "oct") percentage = 55;
-                if(month == "nov") percentage = 55;
-                if(month == "dec") percentage = 85;
-                if(month == "jan") percentage = 81;
-                if(month == "feb") percentage = 60;
-                if(month == "mar") percentage = 60;
-                if(month == "apr") percentage = 69;
-            }else if(team=="bos"){
-                if(month == "oct") percentage = 94;
-                if(month == "nov") percentage = 64;
-                if(month == "dec") percentage = 78;
-                if(month == "jan") percentage = 77;
-                if(month == "feb") percentage = 67;
-                if(month == "mar") percentage = 89;
-                if(month == "apr") percentage = 77;
-            }else{
+            if (team == "tbl") {
+                if (month == "oct") percentage = 55;
+                if (month == "nov") percentage = 55;
+                if (month == "dec") percentage = 85;
+                if (month == "jan") percentage = 81;
+                if (month == "feb") percentage = 60;
+                if (month == "mar") percentage = 60;
+                if (month == "apr") percentage = 69;
+            } else if (team == "bos") {
+                if (month == "oct") percentage = 94;
+                if (month == "nov") percentage = 64;
+                if (month == "dec") percentage = 78;
+                if (month == "jan") percentage = 77;
+                if (month == "feb") percentage = 67;
+                if (month == "mar") percentage = 89;
+                if (month == "apr") percentage = 77;
+            } else {
                 percentage = "cannot be calculated";
             }
 
-            document.getElementById("chancesOutput").innerHTML="Your chances are " +percentage +"%";
+            document.getElementById("chancesOutput").innerHTML = "Your chances are " + percentage + "%";
         }
     </script>
 </body>
