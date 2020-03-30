@@ -385,10 +385,13 @@
 
 /* particles style*/
 
-#particles-bg {
-  position: fixed;
-  height: 100%;
-  width: 100%;
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0
 }
 
 /* ZOOM IMAGES*/
