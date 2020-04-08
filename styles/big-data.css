@@ -48,6 +48,24 @@ button.calculatechances, select{
     border-radius: 10px;
 }
 
+#bd_history div{
+    margin-top: 30px;
+}
+.carousel-item img{
+    height: 500px;
+    width: 100%;
+}
+
+.carousel-caption{
+    right: 5%;
+    left: 5%;
+}
+
+.carousel-caption p{
+width: 100%;
+    color: black;
+}
+
 p {
     font-size: 1.1em;
     width: 50%;
