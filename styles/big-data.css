@@ -78,3 +78,10 @@ section>h2{
 a{
     text-decoration: none;
 }
+
+#references{
+    padding: 0;
+}
+#references li{
+font-size: 10px;
+}
